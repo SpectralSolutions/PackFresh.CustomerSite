@@ -1,11 +1,12 @@
-﻿/*a {
+﻿.col-xs-offset-1 a {
     color: #666666 !important;
-}*/
+}
 
 .section-banner {
     position:relative;
     padding-top: 70px;
 }
+
 
 .contactus-container {
     padding-right: 0px;
@@ -15,19 +16,6 @@
     width: 100%;
 }
 
-.mobile-banner-header {
-    visibility: hidden;
-    position: absolute;
-    top: 42%;
-    margin-left: 10%;
-    color: white;
-    max-width: 270px;
-    font-size: 30px;
-}
-
-.mobile-banner-image {
-    display:none;
-}
 
 .dash-line {
     display: none;
@@ -46,7 +34,7 @@
     border: 1px solid #ccc;
     margin-bottom: 20px;
     margin-top: 55px;
-    height: 250px;
+    height: 310px;
 }
 
 .icon-size {
@@ -54,11 +42,6 @@
     width: 25px;
     margin-right: 32px;
 }
-
-.pull-left {
-    float: left !important;
-}
-
 
 .phone-svg {
     background-image: url('/images/Shared/Phone Icon Dark.svg');
@@ -108,7 +91,7 @@
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 3px;
+    padding: 2px;
     border: 1px solid #ccc;
     border-radius: 0px;
     box-sizing: border-box;
@@ -116,6 +99,9 @@ input[type=text], select, textarea {
     margin-bottom: 2px;
     resize: vertical;
     line-height: normal;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 18px;
+    color: #666666;
 }
 
 input[type=submit] {
@@ -126,7 +112,16 @@ input[type=submit] {
     border-radius: 0px;
     cursor: pointer;
     line-height: normal;
+    font-family: 'Montserrat Alternates', sans-serif !important;
 }
+
+input[type=text], textarea {
+    padding-left: 5px;
+}
+
+
+
+
 
 input[type=submit]:hover {
         background-color: #45a049;
@@ -138,12 +133,8 @@ input, select, textarea {
 
 
 .title-contact {
-    color: #92A62C;
-    font-size: 23px;
-    padding-bottom: 45px;
-    text-align: center;
-    padding-top: 8%;
-    padding-bottom: 13%;
+    padding-top: 12%;
+    padding-bottom: 8%;
 }
 
 .label-text {
@@ -173,12 +164,12 @@ input, select, textarea {
 .btn-rqd {
     float: right;
     margin-top: 6px;
-    width: 55px;
-    height: 15px;
+    width: 70px;
+    height: 20px;
     border-radius: 12px;
     border: 0;
     color: white;
-    font-size: 9px;
+    font-size: 12px;
     cursor: auto;
     position: relative;
     background: #999999;
@@ -196,13 +187,12 @@ input, select, textarea {
 }
 
 
-
 .contact-left-container {
     width: 50%;
     padding-right: 4%;
-    padding-left: 15%;
+    padding-left: 13%;
     float: left;
-    height: 750px;
+    height: 900px;
     background-color: #FFFFFF;
     color: #666666;
 }
@@ -210,10 +200,9 @@ input, select, textarea {
 .contact-right-container {
     width: 50%;
     float: left;
-    padding-left: 4%;
-    height: 750px;
+    height: 900px;
     background-color: #F2F2F2;
-    padding-right: 15%;
+    padding-right: 13%;
     padding-left: 4%;
     color: #666666;
 }
@@ -223,12 +212,30 @@ input, select, textarea {
 }
 
 
+@media screen and (max-width: 960px) {
 
 
-@media screen and (max-width: 840px) {
+    .contact-left-container {
+        padding-left: 10%;
+        height: 750px;
+    }
 
-   
+    .contact-right-container {
+        padding-right: 10%;
+        height: 750px;
+    }
+
+    .title-contact {
+        padding-top: 9%;
+    }
+
+    #map {
+        height: 285px;
+    }
+
+
 }
+
 
 
 /* Mobile */
@@ -237,15 +244,6 @@ input, select, textarea {
 
     .section-banner {
         padding-top: 50px;
-    }
-
-
-    .text-block {
-        visibility:hidden;
-    }
-
-    .mobile-banner-header {
-        visibility: visible;
     }
 
 
@@ -269,22 +267,21 @@ input, select, textarea {
         width: 100%;
         padding-right: 8%;
         padding-left: 8%;
+        height: 720px;
     }
 
     .contact-left-container {
         width: 100%;
         padding-right: 8%;
         padding-left: 8%;
-        height: 645px;
+        height: 710px;
     }
 
-    .contact-right-container {
-        height: 670px;
-    }
+    
 
     .title-contact {
-        padding-top: 4%;
-        padding-bottom: 6%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
    
@@ -294,10 +291,6 @@ input, select, textarea {
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
-
-    .text-block {
-        visibility: hidden;
-    }
 
     .dash-line {
         display: block;
