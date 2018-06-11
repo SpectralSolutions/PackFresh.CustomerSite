@@ -1,35 +1,277 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    margin: 0;
+}
+
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 18px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
     line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+h2 {
+    font-size: 30px;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+h3 {
+    font-size: 20px;
+    line-height: 1.6;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
+p {
+    font-size: 18px;
+}
+
+
+/*#region General Main Top Banner */
+
+.bg {
+    position: relative;
+}
+
+.slide-info {
+    left: 100px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    bottom: 15%;
+}
+
+
+.top-line {
+    border: 0 none;
+    border-top: 2px solid white;
+    background: none;
+    height: 0;
+    margin-top: 17px;
+}
+
+.navigator {
+    width: 25px;
+    height: 38px;
+    background-image: url('/images/Shared/Point down.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 116px;
+    bottom: -8px;
+    transform: rotate(-90deg);
+}
+
+
+.mobile-slide-p {
+    display: none;
+}
+
+
+
+/*#endregion General Main Top Banner*/
+
+
+/*#region Photo Grid*/
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 9px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.33);
+    margin-bottom: 10px;
+}
+
+/*#endregion Photo Grid*/
+
+
+
+/*#region Fonts */
+
+
+
+.slide-p {
+    display: block;
+    width: 597px;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+
+/*.navigator-text {
+    font-size: 20.5px;
+    font-weight: bold;
+    float: left;
+    padding-top: 15px;
+}*/
+
+/*.body-header-text*/
+.body-h {
+    text-align: left;
+    font-size: 31px;
+    font-weight: bold;
+    padding-bottom: 29px;
+}
+
+
+/*.body-normal-text*/
+.body-p {
+    color: #666666;
+    text-align: left;
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+
+/*.one-3-Container .body-header-text*/
+
+.container-intro {
+    margin: auto;
+    width: 1002px;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+
+.container-h {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold
+}
+
+
+.container-p {
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 18.5px;
+    margin: 15px 30px 40px 30px;
+}
+
+
+
+
+/*#endregion Fonts*/
+
+
+/*#region Color */
+.light-green {
+    color: #92A62C;
+}
+
+
+.gray {
+    color: #666666;
+}
+
+/*#endregion Color*/
+
+/*#region Allignment */
+
+.center {
+    text-align: center;
+}
+
+
+/*#endregion Allignment*/
+
+/*#region Weight */
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*#endregion Allignment*/
+
+/*#region Media Queries */
+
+
+/* Narrow */
+@media screen and (max-width: 960px) {
+
+    .slide-info {
+        left: 60px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .slide-p {
+        font-size: 18px;
+        width: 442px;
+    }
+
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+
+    .body-h {
+        font-size: 22px;
+    }
+
+    .slide-p, .slide-h {
+        display: none;
+    }
+
+    .mobile-slide-p {
+        display: block;
+    }
+
+    .container-h {
+        font-size: 22px;
+    }
+
+    .navigator-text {
         display: none;
     }
 }
+
+
+/*#endregion Media*/
+
+

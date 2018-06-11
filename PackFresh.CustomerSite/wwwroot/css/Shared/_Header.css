@@ -1,0 +1,171 @@
+﻿#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+
+
+/*#region Header Basic CSS*/
+.logo-svg {
+    height: 42px;
+    width: 120px;
+    background-image: url('/images/Shared/Pack Fresh Logo Design.svg');
+    background-repeat: no-repeat;
+}
+
+.home-svg {
+    width: 35px;
+    height: 40px;
+    background-image: url('/images/Shared/PF Home Icon.svg');
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    margin-right: 25px;
+}
+
+.home-svg:hover {
+    background-image: url('/images/Shared/PF White Home Icon.svg')
+}
+
+.hover-icon {
+    height: 55px;
+    width: 150px;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+.hover-icon:hover {
+    height: 33px;
+    width: 112px;
+    background-image: url('/images/PageAssets/Header Circle.svg');
+}
+
+.menu-text {
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333333;
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+    border-bottom: 3px solid #92A62C;
+    height: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+    .topnav-logo {
+        height: 40px;
+        width: 140px;
+        background-image: url('/images/Shared/Pack Fresh Logo Design.svg');
+        background-repeat: no-repeat;
+        float: left;
+        /*margin: 15px 0px 0px 0px;*/
+    }
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 0px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*.nav {
+    height: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+}*/
+
+.hover {
+    height: 41px;
+    width: 107px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hover:hover {
+    height: 41px;
+    width: 107px;
+    background-image: url('/images/Shared/Header Circle.svg');
+    background-repeat: no-repeat;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/*END OF Header Basic CSS*/
+
+
+@media screen and (max-width: 960px) {
+    .topnav {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+     .topnav {
+       height: 50px;
+    }
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+    .topnav-logo {
+        height: 30px;
+        width: 100px;
+        /*margin: 11px 0px 0px 0px;*/
+    }
+
+    .topnav a {
+        padding: 10px 0px;
+    }
+
+    .menu-icon {
+        float: left;
+        width: 28px;
+        background-image: url('/images/Shared/White Menu Icon.svg');
+        margin-top: 12px;
+        background-repeat: no-repeat;
+    }
+
+        .menu-icon:hover {
+            background-image: url('/images/Shared/Green Menu Icon.svg');
+        }
+}

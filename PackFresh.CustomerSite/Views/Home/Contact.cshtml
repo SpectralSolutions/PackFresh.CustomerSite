@@ -1,17 +1,185 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+@section style
+    {
+    <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    <script src="~/js/contact.js" asp-append-version="true"></script>
+}
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+
+@*<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">*@
+
+
+<!-- Banner -->
+<section class="section-banner">
+
+    <img class="banner-image" src="~/images/Contact/Asset 1-100.jpg" alt="Nature" style="width:100%;">
+ 
+    <div class="slide-info">
+        <h1>
+            We’re here to <strong>help you.</strong>
+        </h1>
+        <h3 class="slide-p" >
+            Got Questions? Looking for a greener alternative or a customised packaging solution, but you don’t know where you should start .
+
+        </h3>
+
+    </div>
+
+    <div class="mobile-banner-header">
+        We’re here to <strong>help you.</strong>
+    </div>
+
+    
+</section>
+
+<div class="contactus-container">
+    <div class="mobile-banner-text">
+        Got Questions? Are you looking for a <strong style="color:darkgreen">greener</strong> alternative or a custom packaging solution but you don’t know where you should start. <strong>We have the answers.</strong>
+        <hr class="dash-line" style="margin-top: 40px;">
+
+    </div>
+    <div class="contact-left-container line-in-right">
+        <h2 class="title-contact">
+            Contact us directly.
+        </h2>
+
+
+        <div>
+            <div class="pull-left phone-svg icon-size ">  </div>
+            <div class="col-xs-offset-1"> (09) 250 1418 </div>
+            <hr class="green-solid-line" />
+        </div>
+
+
+        <div class="contact-column">
+            <div class="pull-left email-svg icon-size ">  </div>
+            <div class="col-xs-offset-1"> <a href="mailto:orders@packfresh.co.nz?Subject=Enquiry" target="_top">orders@packfresh.co.nz</a> </div>
+            <hr class="green-solid-line" />
+        </div>
+
+        <div class="contact-column">
+            <div class="pull-left clock-svg icon-size ">  </div>
+            <div class="col-xs-offset-1"> <strong> 8am - 4.30pm </strong>Mon to Fri</div>
+            <hr class="green-solid-line" />
+        </div>
+
+        <div class="contact-column">
+            <div class="pull-left address-svg icon-size ">  </div>
+            <div class="col-xs-offset-1"> 20a Arwen Place East Tamaki Auckland </div>
+        </div>
+
+        <div id="map" class=" map-box"></div>
+
+
+    </div>
+
+    <hr class="dash-line ">
+
+
+    <div class="contact-right-container">
+
+        <h2 class="title-contact">
+            Send us a message
+        </h2>
+
+
+        <form method="post">
+
+            <div class="form-label">
+                <label class="label-text">Name</label>
+                <button class="btn-rqd">Required</button>
+            </div>
+
+            <div>
+                <input type="text" name="name">
+            </div>
+
+
+            <div class="form-label">
+                <label class="label-text">Email Address </label>
+                <button class="btn-rqd">Required</button>
+            </div>
+
+            <div>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="form-label">
+                <label class="label-text">Contact Phone </label>
+                <button class="btn-rqd">Required</button>
+            </div>
+
+            <div>
+                <input type="text" name="name">
+            </div>
+
+            <label class="label-text">Company Name </label>
+
+            <div>
+                <input type="text" name="name">
+            </div>
+
+            <div class="form-label">
+                <label class="label-text">Reason for enquiry</label>
+                <button class="btn-rqd">Required</button>
+            </div>
+
+            <div>
+
+                <select id="feedback" name="feedback">
+                    <option value="General">General</option>
+                    <option value="Re-Order">Re-Order</option>
+                    <option value="Custom Print">Custom Print</option>
+                    <option value="Custom Packaging">Custom Packaging</option>
+                    <option value="Product Feedback">Product Feedback</option>
+                </select>
+            </div>
+
+
+            <label class="label-text">How can we help you </label>
+            <button class="btn-rqd">Required</button>
+
+            <div>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:210px"></textarea>
+
+            </div>
+
+
+            <button type="submit" class="btn-send"><div class="strong-bold">SEND</div></button>
+
+        </form>
+
+
+
+
+    </div>
+
+
+</div>
+
+
+<script>
+    function initMap() {
+        var uluru = { lat: - 36.948363, lng: 174.881956 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'Pack Fresh Company, Inc.'
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Qvx0aqKhMoxFn-ztznopEPnPOmvLhmE&callback=initMap">
+</script>
+
+
