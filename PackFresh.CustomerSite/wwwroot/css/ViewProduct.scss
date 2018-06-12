@@ -41,14 +41,11 @@
 
 
 
-.vp-body-wrap {
+.top-pouch {
     width: 1332px;
     margin: 0 auto;
+    overflow: hidden;
 }
-
-/*.top-pouch {
-    border-bottom: 2px solid rgba(102, 102, 102, 0.5);
-}*/
 
 .product-header {
     color: #92A62C;
@@ -204,6 +201,7 @@ input[type=text], select, textarea {
 }
 
 
+
 .phone-icon {
     width: 100px;
     height: 100px;
@@ -218,14 +216,14 @@ input[type=text], select, textarea {
 }
 
 @media screen and (max-width: 1680px) {
-    .vp-body-wrap {
+    .top-pouch {
         width: 1250px;
     }
 }
 
 @media screen and (max-width: 1440px) {
 
-    .vp-body-wrap {
+    .top-pouch {
         width: 1030px;
     }
 
@@ -233,12 +231,23 @@ input[type=text], select, textarea {
         padding-top: 180px;
     }
 
+    .card {
+        width: 240px;
+        margin: 8px;
+    }
+
+    .card-p{
+        font-size: 16px;
+    }
+
+
+
 }
 
 
 @media screen and (max-width: 1200px) {
 
-    .vp-body-wrap {
+    .top-pouch {
         width: 850px;
     }
 
@@ -264,13 +273,18 @@ input[type=text], select, textarea {
         width: 100%;
     }
 
-    .vp-body-wrap {
+    .top-pouch {
         width: 85%;
     }
 
     .pouch-right {
         width: 100%;
         padding: 0px 15% 60px 15%;
+    }
+
+    .card {
+        width: 260px;
+        margin: 15px;
     }
 }
 
