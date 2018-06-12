@@ -125,12 +125,16 @@ input[type=text], select, textarea {
   margin: 13.5px;
   background-color: #f2f2f2; }
 
+.card > img {
+  height: 290px; }
+
 .card:hover {
   box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2); }
 
 .card-rect {
   background-color: #92A62C;
-  height: 80px;
+  height: auto;
+  padding-bottom: 15px;
   vertical-align: middle; }
 
 .card-p {
@@ -210,5 +214,34 @@ input[type=text], select, textarea {
   .pouch-left {
     padding-bottom: 30px; }
   .pouch-h2 {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .card {
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: none; }
+  .card:hover {
+    box-shadow: none; }
+  .card > img {
+    height: 210px;
+    float: left; }
+  .card-info {
+    float: right;
+    width: calc(100% - 157.27px); }
+  .sp-1 {
+    width: 100%;
+    padding-right: 0; }
+  .sp-2 {
+    width: 100%;
+    padding-left: 0px; } }
+
+@media screen and (max-width: 480px) {
+  .card-info {
+    float: none;
+    width: auto; }
+  .card > img {
+    height: 115px;
+    float: left; }
+  .card-rect {
+    float: none;
+    height: 115px; } }
 
