@@ -1,0 +1,291 @@
+﻿/*#region XXXXXX*/
+
+/*#endregion XXXXXX*/
+
+/*#region General*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, input[type=text], select, textarea, button, input[type=submit] {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/*#endregion General*/
+
+/*#region Colors */
+
+$white: #FFFFFF;
+$yellowgreen: #92A62C;
+$green: #3E7830;
+$gray40: #666666;
+$gray60: #999999;
+
+/*#endregion Colors*/
+
+/*#region Fonts */
+
+h1, h3, p {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 18px;
+}
+
+.h1-mob {
+    visibility: hidden;
+    position: absolute;
+    top: 42%;
+    margin-left: 10%;
+    color: white;
+    max-width: 270px;
+    font-size: 30px;
+}
+
+.h2-padding {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+
+.container-intro {
+    margin: auto;
+    width: 1002px;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+/*#endregion Fonts*/
+
+/*#region Color */
+
+.white {
+    color: $white;
+}
+
+.yellowgreen {
+    color: $yellowgreen;
+}
+
+.green {
+    color: $green;
+}
+
+.gray40 {
+    color: $gray40;
+}
+
+.gray60 {
+    color: $gray60;
+}
+
+/*#endregion Color*/
+
+/*#region Allignment */
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/*#endregion Allignment*/
+
+/*#region Weight */
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+
+/*#endregion Allignment*/
+
+/*#region General Main Top Banner */
+
+.relative {
+    position: relative;
+}
+
+.slide-info {
+    left: 100px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    bottom: 15%;
+    width: 597px;
+}
+
+.slide-info .h3 {
+    display: block;
+    padding-top: 15px;
+}
+
+
+.top-line {
+    border: 0 none;
+    border-top: 2px solid white;
+    background: none;
+    height: 0;
+    margin-top: 17px;
+}
+
+.navigator {
+    width: 25px;
+    height: 38px;
+    background-image: url('/images/Shared/Point down.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 116px;
+    bottom: -8px;
+    transform: rotate(-90deg);
+}
+
+
+/*#endregion General Main Top Banner*/
+
+/*#region Photo Grid*/
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 9px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.33);
+    margin-bottom: 10px;
+}
+
+/*#endregion Photo Grid*/
+
+/*#region Media Queries */
+
+
+/* Narrow */
+@media screen and (max-width: 960px) {
+
+    .slide-info {
+        left: 60px;
+        width: 442px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .h2-padding {
+        padding-top: 35px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+
+    h3 {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+ 
+    input[type=text], select, textarea {
+        font-size: 16px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+
+    .slide-info {
+        display: none;
+    }
+
+    .h1-mob {
+        visibility: visible;
+    }
+
+    .h2-padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-h {
+        font-size: 22px;
+    }
+
+    .navigator-text {
+        display: none;
+    }
+}
+
+
+/*#endregion Media*/

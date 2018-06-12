@@ -15,6 +15,18 @@ namespace PackFresh.CustomerSite.Controllers
             return View();
         }
 
+        public IActionResult Products()
+        {
+
+            return View();
+        }
+
+        public IActionResult ViewProduct()
+        {
+
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

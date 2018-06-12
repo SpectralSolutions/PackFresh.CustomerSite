@@ -13,15 +13,16 @@
     </environment>
     <environment exclude="Development">
         @*<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />*@
+            asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />*@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    <!-- CSS Header and Footer -->
+
     <!-- CSS Header and Footer -->
     <link rel="stylesheet" href="~/css/Shared/_Header.css" />
     <link rel="stylesheet" href="~/css/Shared/_Footer.css" />
 
+    <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
 
     <link rel="stylesheet" href="~/node_modules/animate.css/animate.css">
@@ -31,10 +32,7 @@
 <body>
     @Html.Partial("_Header")
 
-    <div class="body-content">
-        @RenderBody()
-
-    </div>
+    @RenderBody()
 
     <footer>
         @Html.Partial("_Footer")
