@@ -464,7 +464,6 @@ img {
 
     .what-we-do {
         height: auto;
-        /* overflow: hidden; */
     }
 
     .one-3-parent {
@@ -481,7 +480,7 @@ img {
 
     .right-container {
         width: 100%;
-        height: 1000px;
+        height: auto;
         padding: 20px 2%;
     }
 
@@ -506,8 +505,8 @@ img {
 
     .help-you {
         height: auto;
-        overflow: auto;
         padding-bottom: 6%;
+        float: left;
     }
 
     .phone-icon {
@@ -547,7 +546,7 @@ img {
 
     .right-container {
         width: 100%;
-        height: 1000px;
+        height: auto;
         padding: 12px 2%;
     }
 

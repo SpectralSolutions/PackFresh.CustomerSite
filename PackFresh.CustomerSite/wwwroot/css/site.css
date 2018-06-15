@@ -218,6 +218,10 @@ input, select, textarea {
 
 /*#endregion Mobile Only*/
 /*#region Media Queries */
+@media screen and (max-width: 1200px) {
+  .container-intro {
+    width: auto; } }
+
 /* Narrow */
 @media screen and (max-width: 960px) {
   .slide-info {

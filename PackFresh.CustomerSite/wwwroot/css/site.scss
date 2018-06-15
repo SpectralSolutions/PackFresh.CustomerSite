@@ -292,6 +292,14 @@ input, select, textarea {
 
 /*#region Media Queries */
 
+@media screen and (max-width: 1200px){
+
+.container-intro {
+    width: auto;
+}
+
+}
+
 
 /* Narrow */
 @media screen and (max-width: 960px) {
