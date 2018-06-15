@@ -25,6 +25,10 @@ body, input[type=text], select, textarea, button, input[type=submit] {
 }
 
 
+.body-wrap{
+    padding-top: 70px;
+}
+
 /*#endregion General*/
 
 /*#region Colors */
@@ -262,6 +266,30 @@ input, select, textarea {
 
 /*#endregion Photo Grid*/
 
+/*#region Mobile Only*/
+
+.mobile-banner-text {
+    margin-top: 30px;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color: #666666;
+}
+
+
+.dash-line {
+    display: none;
+    border: 0 none;
+    border-top: 2px dashed rgba(0, 0, 0, 0.1);
+    background: none;
+    height: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/*#endregion Mobile Only*/
+
 /*#region Media Queries */
 
 
@@ -291,6 +319,11 @@ input, select, textarea {
         font-size: 18px;
     }
 
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
     body {
         font-size: 16px;
     }
@@ -301,31 +334,71 @@ input, select, textarea {
     }
 }
 
-
 /* Mobile */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 840px) {
 
-    .slide-info {
-        display: none;
+    p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 
-    .h1-mob {
-        visibility: visible;
+
+}
+
+    /* Mobile */
+    @media screen and (max-width: 736px) {
+
+        .body-wrap {
+            padding-top: 50px;
+        }
+
+  
+        .slide-info {
+            display: none;
+        }
+
+        .h1-mob {
+            visibility: visible;
+        }
+
+        .h2-padding {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .container-h {
+            font-size: 22px;
+        }
+
+        .navigator-text {
+            display: none;
+        }
+
+        .mobile-banner-text {
+            display: block;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 18px;
+        }
+
+
+        .dash-line {
+            display: block;
+        }
     }
 
-    .h2-padding {
-        padding-top: 20px;
-        padding-bottom: 20px;
+
+/* Mobile (Portrait) */
+@media screen and (max-width: 480px) {
+
+
+    .dash-line {
+        display: block;
     }
 
-    .container-h {
-        font-size: 22px;
-    }
-
-    .navigator-text {
-        display: none;
-    }
 }
 
 
-/*#endregion Media*/
+
+
+    /*#endregion Media*/

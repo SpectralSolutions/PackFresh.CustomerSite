@@ -14,5 +14,9 @@
   {
     "outputFile": "wwwroot/css/ViewProduct.css",
     "inputFile": "wwwroot/css/ViewProduct.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/Index.css",
+    "inputFile": "wwwroot/css/Index.scss"
   }
 ]
