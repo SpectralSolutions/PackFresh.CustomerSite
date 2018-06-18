@@ -69,7 +69,7 @@
   padding-top: 70px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .one-3-parent {
   width: 1050px;
@@ -126,14 +126,19 @@
 
 /*#endregion Help*/
 .cus-review-bg {
-  background: linear-gradient(90deg, #4a2525, #680000);
+  background: linear-gradient(90deg, #4a2525, #680000, #4a2525);
   height: 230px; }
 
 .cus-review {
-  /*padding: 40px 100px;*/ }
+  width: 1100px;
+  margin: auto;
+  height: 230px;
+  padding: 0 30px; }
 
 .logo-holder {
-  width: 30%; }
+  width: 300px;
+  height: 230px;
+  float: left; }
 
 .logo {
   width: 100%;
@@ -146,16 +151,19 @@
   float: left; }
 
 .review {
+  width: 650px;
   float: right;
   display: table;
   display: table;
   height: 230px;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 
 .review > h2 {
-  font-size: 23px;
+  font-size: 25px;
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-weight: normal !important; }
 
 /*#region Banner Slider Images */
 .mySlidesx {
