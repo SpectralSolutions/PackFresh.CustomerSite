@@ -1,7 +1,82 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+@section style {
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/About.css" asp-append-version="true">
+}
+
+    <body>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="~/js/scrollview.js"></script>
+
+        <section id="section01" class="relative">
+            <img src="~/images/About/About Us Main BG.png" style="width:100%; ">
+
+            <div class="slide-info">
+                <h1>Theres a <b class="yellowgreen"> lot more</b> to us than just packaging. </h1>
+            </div>
+
+        </section>
+
+
+        <div class="sec-2-bg" id="section02">
+
+            <img style="float: left;margin: 0px 0px 15px 15px;height: 600px;width: 400px;" alt="Image Sample 5" src="~/images/About/man.png" width="100">
+
+            <div data-position="right" data-offset="250" class="side-content notViewed animBlock" style="border-left: 5px solid #92A62C;">
+                <h2 class="yellowgreen">Our Story </h2>
+                <p class="white">
+                    In 1993, our founders had a disagreement with a packaging supplier, we deserved a better package, they could provide it,  so we thought, why not do it ourselves. <br /> <br /> We did, and packfresh was born, over time, more an more clients sought out our services, and now we provide an end to end solution thats great quality and affordable.
+
+                    You deserve better, find out how we can help
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div id="section03" class="relative" style="height: 600px;">
+
+            <div style="width:40%">
+
+                @*<img src="~/images/About/background.png" style="width: 100%;">*@
+
+                <div data-position="left" data-offset="250" class="side-content notViewed animBlock" style="border-right: 5px solid #92A62C; width:40%">
+                    <h2 class="yellowgreen">Our People</h2>
+                    <p class="white">
+                        The Pack-Fresh family is as diverse as our product range, we employ a small group of talented pros, who keep our business moving forward. <br /> <br />
+
+                        We‘ve entrusted our legacy and the reputation of our company to this fine team and know you can too.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Photo Grid -->
+
+            <div class="photo-container">
+
+                <div class="con-flex">
+                    <div class="single-image"><img src="/images/Index/image.png" class="box-shadow"></div>
+                    <div class="single-image"><img src="/images/Index/image (2).png" class="box-shadow"></div>
+                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                </div>
+
+            </div>
+
+            <!-- Photo Grid -->
+
+        </div>
+
+
+
+
+    </body>
