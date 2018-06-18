@@ -167,7 +167,7 @@ input, select, textarea {
   background-image: url("/images/Shared/Point down.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: 116px;
+  left: 125px;
   bottom: -8px;
   transform: rotate(-90deg); }
 
@@ -260,8 +260,6 @@ input, select, textarea {
   .h2-padding {
     padding-top: 20px;
     padding-bottom: 20px; }
-  .container-h {
-    font-size: 22px; }
   .navigator-text {
     display: none; }
   .mobile-banner-text {

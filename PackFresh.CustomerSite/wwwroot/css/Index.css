@@ -60,40 +60,46 @@
   background-image: url("/images/Index/MAIN - Third Section BG.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 90px;
+  padding-top: 70px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   color: #ffffff;
   margin-bottom: 20px; }
 
 .one-3-parent {
   width: 1050px;
-  margin: auto; }
+  height: 400px;
+  margin: auto;
+  margin-top: 30px; }
 
 .one-3-Container {
-  width: 31%;
+  width: 318px;
+  height: 400px;
   float: left;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px;
   border: solid 1.25px rgba(255, 255, 255, 0.33);
-  height: auto;
-  margin-right: 3.5%; }
+  margin: auto 1.5%;
+  padding: 20px 0; }
+
+.one-3-Container-info {
+  padding: 0 15px; }
 
 .phone-icon {
-  width: 225px;
-  height: 225px;
+  width: 175px;
+  height: 175px;
   background-image: url("/images/Index/Agree Icon.svg");
   background-repeat: no-repeat;
   position: absolute;
   display: inline-block;
   position: relative;
-  margin-top: 40px;
   background-position: center; }
 
-.one-3-text {
-  margin: 15px 30px 30px 30px;
-  line-height: 1.5;
-  font-size: 16px; }
+.p1 {
+  font-size: 23px;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: bold; }
 
 /*EOF How we can help you*/
 /*#region Banner Slider Images */
@@ -114,7 +120,7 @@ img {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 47.5%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -146,14 +152,14 @@ img {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   margin: 0 2px;
   background-color: transparent;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  border: 1px solid #cccccc; }
+  border: 2px solid #cccccc; }
 
 .active, .dot:hover {
   background-color: #92A62C !important; }
@@ -199,16 +205,7 @@ img {
   .single-image {
     width: 26%;
     height: 25%;
-    margin: 10px; }
-  .one-3-parent {
-    width: 850px; }
-  .phone-icon {
-    width: 195px;
-    height: 175px; }
-  .one-3-Container {
-    height: 490px;
-    width: 30.5%;
-    margin-right: 4.25%; } }
+    margin: 10px; } }
 
 @media screen and (max-width: 1440px) {
   .left-container {
@@ -226,6 +223,15 @@ img {
 
 /* Normal */
 @media screen and (max-width: 1200px) {
+  .help-you {
+    padding-top: 50px; }
+  .one-3-parent {
+    width: 90%; }
+  .one-3-Container {
+    width: 30.33%; }
+  .phone-icon {
+    width: 140px;
+    height: 140px; }
   .left-container {
     padding-right: 5%;
     padding-left: 5%;
@@ -236,22 +242,18 @@ img {
 
 /* Narrow */
 @media screen and (max-width: 960px) {
-  .one-3-parent {
-    width: 775px; }
-  .one-3-Container {
-    width: 32%;
-    margin-right: 2%; }
   .one-3-text {
     font-size: 15px; }
+  .one-3-Container {
+    padding: 10px; }
   .one-3-Container .body-header-text {
     text-align: center;
     color: #ffffff;
     padding-bottom: 0px;
     font-size: 20px;
     font-weight: normal; }
-  .phone-icon {
-    width: 170px;
-    height: 155px; }
+  .one-3-Container-info {
+    padding: 0 10px; }
   .left-container {
     padding-right: 5%;
     padding-left: 5%;
@@ -270,7 +272,7 @@ img {
     font-size: 15px;
     line-height: 1.5; }
   .help-you {
-    padding-top: 60px; }
+    padding-top: 40px; }
   .help-you .body-normal-text {
     font-size: 15px;
     line-height: 1.4;
@@ -278,12 +280,20 @@ img {
   .center-line {
     margin-top: 20px; }
   hr {
-    margin-bottom: 0px !important; } }
+    margin-bottom: 0px !important; }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 1px solid #cccccc; } }
 
 /* Narrower */
 @media screen and (max-width: 840px) {
-  .one-3-parent {
-    width: 658px; }
   .left-container {
     padding-right: 5%;
     padding-left: 5%;
@@ -314,13 +324,12 @@ img {
   .what-we-do {
     height: auto; }
   .one-3-parent {
-    width: 100%; }
+    width: 100%;
+    margin-top: 15px; }
   .one-3-Container {
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+    width: 90%;
     height: auto;
-    margin-bottom: 20px; }
+    margin: 10px 5%; }
   .right-container {
     width: 100%;
     height: auto;
@@ -329,8 +338,6 @@ img {
     width: 41%;
     height: auto;
     margin: 2.5%; }
-  .help-you {
-    padding-top: 65px; }
   .body-header-text {
     text-align: center; }
   .body-normal-text {
@@ -338,11 +345,13 @@ img {
   .help-you {
     height: auto;
     padding-bottom: 6%;
-    float: left; }
+    float: left;
+    padding-top: 35px; }
   .phone-icon {
     width: 120px;
     height: 120px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    float: left; }
   .body-header-text {
     font-size: 22px; }
   .one-3-Container .body-header-text {
@@ -369,5 +378,9 @@ img {
   .single-image {
     width: 41%;
     height: auto;
-    margin: 2.5%; } }
+    margin: 2.5%; }
+  .phone-icon {
+    display: none; }
+  .one-3-Container-info > p {
+    margin: 0; } }
 
