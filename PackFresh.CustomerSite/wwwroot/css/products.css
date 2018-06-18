@@ -1,5 +1,29 @@
 ﻿/*#region XXXXXX*/
 /*#endregion XXXXXX*/
+/*#region Auto Slide */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .slider .slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  .slider .slide {
+    height: 400px;
+    width: 100%; }
+
+/*#endregion Auto Slide*/
 /*#region Solid Line*/
 .solid-line-relative {
   border: 0 none;
