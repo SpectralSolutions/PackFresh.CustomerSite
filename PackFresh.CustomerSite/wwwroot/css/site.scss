@@ -354,55 +354,68 @@ input, select, textarea {
         line-height: 1.5;
     }
 
-
 }
 
     /* Mobile */
-    @media screen and (max-width: 736px) {
+@media screen and (max-width: 740px) {
 
-        .body-wrap {
-            padding-top: 50px;
-        }
 
-  
-        .slide-info {
-            display: none;
-        }
+    .h1-mob {
+        top: 25%;
+        margin-left: 7%;
+        visibility: visible;
+    }
 
-        .h1-mob {
-            visibility: visible;
-        }
+    .body-wrap {
+        padding-top: 50px;
+    }
 
+<<<<<<< HEAD
 
         .h2-padding {
             padding-top: 20px;
             padding-bottom: 20px;
+=======
+  
+    .slide-info {
+        display: none;
+>>>>>>> ea605920d73f24dd6bba3b83d0ac0b333d41883c
         }
 
-        .navigator-text {
-            display: none;
+    .h2-padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
         }
 
-        .mobile-banner-text {
-            display: block;
-            margin-left: 10%;
-            margin-right: 10%;
-            font-size: 18px;
+    .navigator-text {
+        display: none;
         }
 
+    .mobile-banner-text {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+        }
 
-        .dash-line {
+    .dash-line {
             display: block;
         }
     }
 
 
 /* Mobile (Portrait) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
 
+    .h1-mob {
+        top: 20%;
+        max-width: 185px;
+        font-size: 21px;
+    }
 
-    .dash-line {
-        display: block;
+    .h2-padding {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 }

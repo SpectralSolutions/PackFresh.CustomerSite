@@ -253,13 +253,15 @@ input, select, textarea {
     line-height: 1.5; } }
 
 /* Mobile */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 740px) {
+  .h1-mob {
+    top: 25%;
+    margin-left: 7%;
+    visibility: visible; }
   .body-wrap {
     padding-top: 50px; }
   .slide-info {
     display: none; }
-  .h1-mob {
-    visibility: visible; }
   .h2-padding {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -274,9 +276,14 @@ input, select, textarea {
     display: block; } }
 
 /* Mobile (Portrait) */
-@media screen and (max-width: 480px) {
-  .dash-line {
-    display: block; } }
+@media screen and (max-width: 430px) {
+  .h1-mob {
+    top: 20%;
+    max-width: 185px;
+    font-size: 21px; }
+  .h2-padding {
+    padding-top: 10px;
+    padding-bottom: 10px; } }
 
 /*#endregion Media*/
 
