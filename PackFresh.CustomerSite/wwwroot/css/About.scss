@@ -3,6 +3,8 @@
 /*#endregion XXXXXX*/
 
 
+/*#region General*/
+
 img {
     vertical-align: middle;
     width: 100%;
@@ -12,43 +14,7 @@ img {
     position: relative;
 }
 
-.sec-2-bg {
-    background-image: url('../images/About/Our Story.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #999;
-    height: 600px;
-    position: relative;
-}
-
-#section03 {
-    background-image: url('../images/About/background.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 40%;
-}
-
-.photo-container {
-    padding: 42px 0px;
-    width: 60%;
-    float: right
-}
-
-.con-flex {
-    width: 100%;
-    display: flex;
-    FLEX-WRAP: WRAP;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-
-.single-image {
-    width: 25%;
-    height: 25%;
-    margin: 10px;
-}
+/*#endregion General*/
 
 
 /*#region Sliding Animation*/
@@ -108,6 +74,180 @@ img {
 
 
 /*#endregion Sliding Animation*/
+
+
+/*#region Section02*/
+
+.sec-2-bg {
+    background-image: url('../images/About/Our Story.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #999;
+    height: 600px;
+    position: relative;
+}
+
+/*#endregion Section02*/
+
+
+/*#region Section03*/
+
+#section03 {
+    background-image: url('../images/About/background.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 40%;
+}
+
+.photo-container {
+    padding: 42px 0px;
+    width: 60%;
+    float: right
+}
+
+.con-flex {
+    width: 100%;
+    display: flex;
+    FLEX-WRAP: WRAP;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.single-image {
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+}
+
+
+
+/*#endregion Section03*/
+
+
+/*#region Section04*/
+
+.logo-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 58%;
+    margin: auto;
+}
+
+
+.logo-flex-container > img {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+
+/*#endregion Section04*/
+
+
+
+/*#region Section05*/
+
+
+.section05 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-image: url('/images/Index/MAIN - Third Section BG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-top: 90px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.one-3-parent {
+    /*width: 850px;
+    margin: auto;
+    float: right;*/
+    padding-left: 40%;
+    padding-right: 10%;
+}
+
+.one-3-Container {
+    width: 30.5%;
+    float: left;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: solid 1.25px rgba(255, 255, 255, 0.33);
+    margin-right: 4.25%;
+}
+
+
+@each $name in 'Time' 'Spec' 'Budget' {
+    .#{$name} {
+        background-image: url('/images/About/#{$name} Icon.svg');
+        width: 135px;
+        height: 175px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        background-position: center;
+    }
+}
+
+.Consult {
+    background-image: url('/images/Index/Consult Icon.svg');
+    width: 135px;
+    height: 175px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+}
+
+.one-3-text {
+    margin: 15px 30px 30px 30px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.text-below-image {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    bottom: 105px;
+    position: relative;
+}
+
+
+/*#endregion Section05*/
+
+
+
+.bottom-info {
+    /*background: linear-gradient(90deg, #8cc63f, #006837);*/
+    height: 170px;
+}
+
+
+
+.phone-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('/images/About/About Us Piggybank.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    float: right;
+    margin-top: 35px;
+}
+
 
 
 

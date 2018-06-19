@@ -52,6 +52,9 @@ p {
   max-width: 270px;
   font-size: 30px; }
 
+.bg-slides > .h1-mob {
+  top: 15%; }
+
 .h2-padding {
   padding-top: 75px;
   padding-bottom: 50px; }

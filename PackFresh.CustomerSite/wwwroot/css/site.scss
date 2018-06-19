@@ -77,6 +77,10 @@ p {
     font-size: 30px;
 }
 
+.bg-slides > .h1-mob {
+    top: 15%;
+}
+
 .h2-padding {
     padding-top: 75px;
     padding-bottom: 50px;
@@ -368,6 +372,7 @@ input, select, textarea {
         .h1-mob {
             visibility: visible;
         }
+
 
         .h2-padding {
             padding-top: 20px;
