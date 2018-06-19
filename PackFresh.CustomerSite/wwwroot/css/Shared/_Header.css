@@ -1,4 +1,4 @@
-﻿#overlay {
+﻿/*#overlay {
     position: fixed;
     display: none;
     width: 100%;
@@ -20,7 +20,7 @@
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-}
+}*/
 
 
 
@@ -138,9 +138,10 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 740px) {
      .topnav {
        height: 50px;
+       padding: 0 2.5% 0 5%;
     }
 
         .topnav a:not(:first-child) {
@@ -169,3 +170,41 @@
             background-image: url('/images/Shared/Green Menu Icon.svg');
         }
 }
+
+
+
+
+
+
+
+
+
+/*OVERLAY*/
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto;
+    z-index: 99;
+    margin-top: 50px;
+}
+
+
+.solid-line1 {
+    border: 0 none;
+    border-top: 2px solid #92A62C;
+    background: none;
+    height: 0;
+    width: 100%;
+}
+
+
+.wrap-nav > h2 > a {
+    color: white;
+}
+

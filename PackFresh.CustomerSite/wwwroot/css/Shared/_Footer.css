@@ -47,8 +47,9 @@
 
 .footer-copyright {
     border-left: 0;
+    height: 40px;
     display: block;
-    line-height: 2em;
+    line-height: 2;
     text-align: center;
     color: #92A62C;
 }
@@ -90,3 +91,58 @@ ul, ol {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 960px) {
+
+       .footer-copyright {
+            line-height: 2.5;
+    }
+}
+
+
+    @media screen and (max-width: 740px) {
+
+        .contact-container {
+            padding-left: 10%;
+            margin-bottom: 15px;
+        }
+
+        .footer-headline {
+            font-size: 25px;
+            color: #92A62C;
+            padding: 25px 0px 15px 0px;
+        }
+    }
+
+
+
+    @media screen and (max-width: 480px) {
+
+        .contact-container {
+            float: left;
+            padding: 0 10%;
+            margin-bottom: 10px;
+        }
+
+        .footer-headline {
+            width: 90%;
+            line-height: 1.4;
+        }
+
+        .footer-col-container {
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            float: left;
+        }
+
+        #sitemap {
+            padding: 15px 0px 15px 0px !important;
+        }
+
+        .flex-item {
+            color: #999999;
+            text-align: left;
+            width: 100%;
+        }
+    }
