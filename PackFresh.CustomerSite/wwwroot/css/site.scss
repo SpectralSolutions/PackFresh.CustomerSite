@@ -350,54 +350,61 @@ input, select, textarea {
         line-height: 1.5;
     }
 
-
 }
 
     /* Mobile */
-    @media screen and (max-width: 736px) {
+@media screen and (max-width: 740px) {
 
-        .body-wrap {
-            padding-top: 50px;
-        }
+
+    .h1-mob {
+        top: 25%;
+        margin-left: 7%;
+        visibility: visible;
+    }
+
+    .body-wrap {
+        padding-top: 50px;
+    }
 
   
-        .slide-info {
-            display: none;
+    .slide-info {
+        display: none;
         }
 
-        .h1-mob {
-            visibility: visible;
+    .h2-padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
         }
 
-        .h2-padding {
-            padding-top: 20px;
-            padding-bottom: 20px;
+    .navigator-text {
+        display: none;
         }
 
-        .navigator-text {
-            display: none;
+    .mobile-banner-text {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
         }
 
-        .mobile-banner-text {
-            display: block;
-            margin-left: 10%;
-            margin-right: 10%;
-            font-size: 18px;
-        }
-
-
-        .dash-line {
+    .dash-line {
             display: block;
         }
     }
 
 
 /* Mobile (Portrait) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
 
+    .h1-mob {
+        top: 20%;
+        max-width: 185px;
+        font-size: 21px;
+    }
 
-    .dash-line {
-        display: block;
+    .h2-padding {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 }
