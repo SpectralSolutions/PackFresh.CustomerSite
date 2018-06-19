@@ -85,8 +85,8 @@
   margin: 1px;
   border-radius: 2px;
   font-family: arial;
-  width: 30px;
-  height: 30px; }
+  width: 29px;
+  height: 29px; }
 
 .specifications-right {
   float: left;
@@ -181,7 +181,9 @@ input[type=text], select, textarea {
     width: 240px;
     margin: 8px; }
   .card-p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .specifications-right {
+    padding-bottom: 100px; } }
 
 @media screen and (max-width: 1200px) {
   .top-pouch {
@@ -189,7 +191,9 @@ input[type=text], select, textarea {
   .pouch-h2 {
     padding-top: 60px; }
   .pouch-left {
-    padding-bottom: 70px; } }
+    padding-bottom: 70px; }
+  .specifications-right {
+    padding-bottom: 80px; } }
 
 @media screen and (max-width: 960px) {
   .pouch-left {
@@ -204,7 +208,9 @@ input[type=text], select, textarea {
     padding: 0px 15% 60px 15%; }
   .card {
     width: 260px;
-    margin: 15px; } }
+    margin: 15px; }
+  .specifications-right {
+    padding-bottom: 70px; } }
 
 @media screen and (max-width: 736px) {
   .pouch-right {
@@ -231,7 +237,11 @@ input[type=text], select, textarea {
     padding-right: 0; }
   .sp-2 {
     width: 100%;
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .specifications-left {
+    padding-bottom: 40px; }
+  .specifications-right {
+    padding-bottom: 40px; } }
 
 @media screen and (max-width: 480px) {
   .card-info {
@@ -242,5 +252,15 @@ input[type=text], select, textarea {
     float: left; }
   .card-rect {
     float: none;
-    height: 115px; } }
+    height: 115px; }
+  .pouch-h2 {
+    padding-top: 0px; }
+  .pouch-left {
+    padding-bottom: 0px; }
+  .pouch-right {
+    padding-bottom: 15px; }
+  .specifications-left {
+    padding-bottom: 20px; }
+  .specifications-right {
+    padding-bottom: 20px; } }
 

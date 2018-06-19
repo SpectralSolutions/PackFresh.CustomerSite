@@ -117,8 +117,8 @@
     margin: 1px;
     border-radius: 2px;
     font-family: arial;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
 }
 
 
@@ -244,6 +244,10 @@ input[type=text], select, textarea {
         font-size: 16px;
     }
 
+    .specifications-right {
+        padding-bottom: 100px;
+    }
+
 
 
 }
@@ -261,6 +265,10 @@ input[type=text], select, textarea {
 
     .pouch-left {
         padding-bottom: 70px;
+    }
+
+    .specifications-right {
+        padding-bottom: 80px;
     }
 
 }
@@ -289,6 +297,10 @@ input[type=text], select, textarea {
     .card {
         width: 260px;
         margin: 15px;
+    }
+
+    .specifications-right {
+        padding-bottom: 70px;
     }
 }
 
@@ -322,7 +334,6 @@ input[type=text], select, textarea {
         float: left;
     }
 
-
     .card-info {
         float: right;
         width: calc(100% - 157.27px);
@@ -338,6 +349,13 @@ input[type=text], select, textarea {
         padding-left: 0px; 
     }
 
+    .specifications-left {
+        padding-bottom: 40px;
+    }
+
+    .specifications-right {
+        padding-bottom: 40px;
+    }
 
     }
 
@@ -357,6 +375,26 @@ input[type=text], select, textarea {
     .card-rect {
         float: none;
         height: 115px;
+    }
+
+    .pouch-h2 {
+        padding-top: 0px;
+    }
+
+    .pouch-left {
+        padding-bottom: 0px;
+    }
+
+    .pouch-right {
+        padding-bottom: 15px;
+    }
+
+    .specifications-left {
+        padding-bottom: 20px;
+    }
+
+    .specifications-right {
+        padding-bottom: 20px;
     }
 
     }
