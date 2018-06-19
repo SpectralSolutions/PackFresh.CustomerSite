@@ -62,6 +62,11 @@ h3 {
     line-height: 1.6;
 }
 
+h4 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
 p {
     font-size: 18px;
     line-height: 1.7;
@@ -354,7 +359,6 @@ input, select, textarea {
     h3 {
         font-size: 18px;
         margin-top: 10px;
-
     }
 
     p {
@@ -469,7 +473,7 @@ input, select, textarea {
 @media screen and (max-width: 360px) {
 
     .bg-slides > .h1-mob {
-        top: 5%;
+        top: 11%;
     }
 }
 
