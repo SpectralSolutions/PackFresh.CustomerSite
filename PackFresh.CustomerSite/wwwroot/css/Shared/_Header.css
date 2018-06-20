@@ -129,6 +129,7 @@
 
 #overlay {
     display: none;
+    visibility: hidden;
     position: fixed;
     top: 0;
     height: 30%;
@@ -163,6 +164,7 @@
         padding-right: 25px;
         padding-left: 25px;
     }
+
 }
 
 /* Mobile */
@@ -197,6 +199,10 @@
         .menu-icon:hover {
             background-image: url('/images/Shared/Green Menu Icon.svg');
         }
+
+    #overlay {
+        visibility: visible;
+    }
 
 }
 
