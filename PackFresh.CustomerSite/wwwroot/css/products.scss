@@ -1,6 +1,8 @@
-﻿/*#region XXXXXX*/
+﻿/*#region Anurag - TODO*/
 
-/*#endregion XXXXXX*/
+/*Change Transform and slide width when actual image and actual width of alll image is done */ 
+
+/*#endregion Anurag - TODO*/
 
 /*#region Auto Slide */
 
@@ -146,6 +148,20 @@ $animationSpeed: 10s;
         width: 85%;
         padding-bottom: 20px;
     }
+
+    .slider {
+        height: 200px;
+    }
+
+    .slider .slide {
+        height: 200px;
+        width: auto;
+    }
+
+    .slide > img {
+        height : 200px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
