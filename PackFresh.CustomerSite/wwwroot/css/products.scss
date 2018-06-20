@@ -90,18 +90,18 @@ $animationSpeed: 10s;
     justify-content: center;
 }
 
-.img-flex-container > div {
+.img-flex-container > a > div {
     background-color: white;
     padding: 12px;
 }
 
-.img-flex-container > div > img {
+.img-flex-container > a > div > img {
     width: 190px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.33);
     border-radius: 3px;
 }
 
-.img-flex-container > div > img:hover {
+.img-flex-container > a > div > img:hover {
     transform: scale(1.1);
 }
 
@@ -115,7 +115,7 @@ $animationSpeed: 10s;
         width: 900px;
     }
 
-    .img-flex-container > div > img {
+    .img-flex-container > a > div > img {
         width: 200px;
     }
 
@@ -175,7 +175,7 @@ $animationSpeed: 10s;
         width: calc(50% - 15px);
     }
 
-    .img-flex-container > div > img {
+    .img-flex-container > a > div > img {
         width: 100%;
     }
 }
