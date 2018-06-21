@@ -1,4 +1,12 @@
-﻿/*#region XXXXXX*/
+﻿/*#region Anurag - TODO*/
+
+/*Change the color of gallery dots, Invisible on lover resolution screen */
+
+/*#endregion Anurag - TODO*/
+
+
+
+/*#region XXXXXX*/
 
 
 /*#endregion XXXXXX*/
@@ -48,6 +56,11 @@
     /*#endregion Left*/
 
     /*#region Right*/
+
+
+.gallery-slide {
+    display: none
+}
 
     .con-flex {
         width: 100%;

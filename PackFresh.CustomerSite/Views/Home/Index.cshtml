@@ -165,18 +165,40 @@
 
             <div class="right-container">
 
-                <div class="con-flex">
+                <div class="gallery-slide">
+                    <div class="con-flex">
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image.png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (2).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                        <!-- Photo Grid -->
+                    </div>
+                </div>
 
-                    <div class="single-image"><img src="/images/Index/image.png" class="box-shadow"></div>
-                    <div class="single-image"><img src="/images/Index/image (2).png" class="box-shadow"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                <div class="gallery-slide">
+                    <div class="con-flex">
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image.png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (2).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                        <!-- Photo Grid -->
+                    </div>
+                </div>
 
-                    <!-- Photo Grid -->
-
-
+                <div class="gallery-slide">
+                    <div class="con-flex">
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image.png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (2).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                        <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                        <!-- Photo Grid -->
+                    </div>
                 </div>
 
                 <div style="text-align: center;">
@@ -185,6 +207,38 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
 
                 </div>
+
+                <script>
+                    //Script for the gallery next and previous
+
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("gallery-slide");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+
             </div>
 
         </div>
@@ -262,34 +316,5 @@
 
     </div>
 
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlidesx");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
 </body>
