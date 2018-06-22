@@ -21,7 +21,7 @@ namespace PackFresh.CustomerSite.Controllers
             return View();
         }
 
-        public IActionResult ViewProduct()
+        public IActionResult Product()
         {
 
             return View();

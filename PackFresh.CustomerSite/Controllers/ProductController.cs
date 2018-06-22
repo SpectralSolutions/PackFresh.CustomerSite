@@ -75,6 +75,7 @@ namespace PackFresh.CustomerSite.Controllers
 
             List<ProductRange> productRangeList = JsonConvert.DeserializeObject<List<ProductRange>>(decodedString);
 
+
             List<ProductRange> filterredProductRangeList = (productRangeList.Where(e => e.Range == rangeName)).ToList();
 
             return filterredProductRangeList;
