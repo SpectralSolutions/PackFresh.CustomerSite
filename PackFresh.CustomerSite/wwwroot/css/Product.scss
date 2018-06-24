@@ -212,20 +212,20 @@ input[type=text], select, textarea {
 }
 
 .bottom-banner-p {
-    width: 750px;
+    width: 785px;
     height: 170px;
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
     float: left;
-    padding-top: 62px;
+    padding: 62px 12.5px;
 }
 
 .phone-icon-container {
-    width: 170px;
+    width: 135px;
     height: 170px;
     float: right;
-    padding: 35px;
+    padding: 35px 25px 35px 12.5px;
 }
 
 .phone-icon {
@@ -325,19 +325,19 @@ input[type=text], select, textarea {
     }
 
     .bottom-banner {
-        width: 700px;
+        width: 650px;
     }
 
     .bottom-banner-p {
-        width: 500px;
-        padding-top: 50px;
+        width: 515px;
+        padding: 62px 1px;
     }
 
     .phone-icon-container {
-        width: 200px;
+        width: 135px;
         height: 170px;
         float: right;
-        padding: 35px 50px;
+        padding: 35px 0px 35px 35px;
     }
 
     .phone-icon {
@@ -403,6 +403,34 @@ input[type=text], select, textarea {
         padding-bottom: 40px;
     }
 
+    .bottom-info {
+        height: 140px;
+    }
+
+    .bottom-banner {
+        width: 90%;
+        height: 140px;
+    }
+
+    .bottom-banner-p {
+        width: calc(100% - 100px);
+        padding: 30px 1px;
+    }
+
+    .phone-icon-container {
+        width: 100px;
+        padding: 30px 0px 30px 20px;
+    }
+
+    .phone-icon {
+        width: 80px;
+        height: 80px;
+        background-image: url('/images/About/Budget Icon.svg');
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+    }
+
     }
 
 
@@ -441,6 +469,24 @@ input[type=text], select, textarea {
 
     .specifications-right {
         padding-bottom: 20px;
+    }
+
+    .bottom-banner-p {
+        width: calc(100% - 80px);
+        padding: 20px 1px;
+        height: 140px;
+    }
+
+    .phone-icon-container {
+        width: 80px;
+        height: 140px;
+        float: right;
+        padding: 40px 0px 40px 20px;
+    }
+
+    .phone-icon {
+        width: 60px;
+        height: 60px;
     }
 
     }
