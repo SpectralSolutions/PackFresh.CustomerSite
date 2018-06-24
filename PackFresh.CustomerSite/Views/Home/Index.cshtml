@@ -11,281 +11,354 @@
 }
 
 
-<body>
+    <body>
 
 
 
-    <div class="relative">
+        <div class="relative">
 
 
-        <div class="bg-slides">
-            <img src="~/images/Index/HP.png" style="width:100%">
-            <div class="slide-info-home">
-                <h1>
+            <div class="bg-slides">
+                <img src="~/images/Index/HP.png" style="width:100%">
+                <div class="slide-info-home">
+                    <h1>
+                        <strong>Size</strong> matters... <br /> <strong>Materials</strong> too.
+                    </h1>
+                    <h3>
+                        Every product is different, we know what type, size and materials are best for your product. Talk to us today to get the right solution.
+                    </h3>
+
+                </div>
+
+                <div class="h1-mob">
                     <strong>Size</strong> matters... <br /> <strong>Materials</strong> too.
-                </h1>
-                <h3>
+                </div>
+
+                <div class="mobile-banner-text">
                     Every product is different, we know what type, size and materials are best for your product. Talk to us today to get the right solution.
-                </h3>
+
+                    <hr class="dash-line" style="margin-top: 40px;">
+                </div>
 
             </div>
 
-            <div class="h1-mob">
-                <strong>Size</strong> matters... <br /> <strong>Materials</strong> too.
-            </div>
 
-            <div class="mobile-banner-text">
-                Every product is different, we know what type, size and materials are best for your product. Talk to us today to get the right solution.
+            <div class="bg-slides">
+                <img src="~/images/Index/HP.png" style="width:100%">
+                <div class="slide-info-home">
+                    <h1>
+                        Your product’s <strong>unique</strong>. <br /> Is your <strong>package</strong>?
+                    </h1>
+                    <h3>
+                        Customise the look of your product, we offer a printed packaging service which will help you bring your product to life. Talk to us today.
+                    </h3>
+                </div>
 
-                <hr class="dash-line" style="margin-top: 40px;">
-            </div>
+                <div class="h1-mob">
+                    <strong>Customise</strong> <br /> your package.
+                </div>
 
-        </div>
-
-
-        <div class="bg-slides">
-            <img src="~/images/Index/HP.png" style="width:100%">
-            <div class="slide-info-home">
-                <h1>
-                    Your product’s <strong>unique</strong>. <br /> Is your <strong>package</strong>?
-                </h1>
-                <h3>
+                <div class="mobile-banner-text">
                     Customise the look of your product, we offer a printed packaging service which will help you bring your product to life. Talk to us today.
-                </h3>
-            </div>
 
-            <div class="h1-mob">
-                <strong>Customise</strong> <br /> your package.
-            </div>
+                    <hr class="dash-line" style="margin-top: 40px;">
+                </div>
 
-            <div class="mobile-banner-text">
-                Customise the look of your product, we offer a printed packaging service which will help you bring your product to life. Talk to us today.
 
-                <hr class="dash-line" style="margin-top: 40px;">
             </div>
 
 
-        </div>
+            <div class="bg-slides">
+                <img src="~/images/Index/HP.png" style="width:100%">
+                <div class="slide-info-home">
+                    <h1>
+                        Keep it <strong>green</strong> with <br /> NatureFlex
+                    </h1>
+                    <h3>
+                        We offer a range of quality compostable, bio-degradable products. If your looking for an eco-friendly alternative, lets talk.
+                    </h3>
+
+                </div>
+
+                <div class="h1-mob">
+                    Go <strong>green</strong> with NatureFlex
+                </div>
 
 
-        <div class="bg-slides">
-            <img src="~/images/Index/HP.png" style="width:100%">
-            <div class="slide-info-home">
-                <h1>
-                    Keep it <strong>green</strong> with <br /> NatureFlex
-                </h1>
-                <h3>
+                <div class="mobile-banner-text">
                     We offer a range of quality compostable, bio-degradable products. If your looking for an eco-friendly alternative, lets talk.
-                </h3>
+
+                    <hr class="dash-line" style="margin-top: 40px;">
+                </div>
 
             </div>
 
-            <div class="h1-mob">
-                Go <strong>green</strong> with NatureFlex
-            </div>
+
+            <div class="bg-slides">
+                <img src="~/images/Index/HP.png" style="width:100%">
+                <div class="slide-info-home">
+                    <h1>
+                        On Time, On Spec <br /> <strong>On Budget.</strong>
+                    </h1>
+                    <h3>
+                        We promise to deliver a quality packaging solution to you on time, as per your specifications, at an honest and reasonable price.
+                    </h3>
+
+                </div>
+
+                <div class="h1-mob">
+                    On Time, Spec  <br /> <strong>& Budget.</strong>
+                </div>
 
 
-            <div class="mobile-banner-text">
-                We offer a range of quality compostable, bio-degradable products. If your looking for an eco-friendly alternative, lets talk.
-
-                <hr class="dash-line" style="margin-top: 40px;">
-            </div>
-
-        </div>
-
-
-        <div class="bg-slides">
-            <img src="~/images/Index/HP.png" style="width:100%">
-            <div class="slide-info-home">
-                <h1>
-                    On Time, On Spec <br /> <strong>On Budget.</strong>
-                </h1>
-                <h3>
+                <div class="mobile-banner-text">
                     We promise to deliver a quality packaging solution to you on time, as per your specifications, at an honest and reasonable price.
+
+                    <hr class="dash-line" style="margin-top: 40px;">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <script>
+            //Start This is for the background slider
+            var myIndex = 0;
+            carousel();
+
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("bg-slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+
+            //End This is for the background slider
+
+
+        </script>
+
+
+        <div style="overflow:auto">
+
+            <div class="what-we-do">
+
+
+                <div class="left-container line-in-right">
+
+                    <h2 class="yellowgreen" style="margin: 0;">What we do</h2>
+                    <p class="gray40" style="line-height: 1.8;">
+                        Every customers needs are different so we produce, source and supply a variety of products to meet those needs. <br /> <br /> We work tirelessy to keep on top of global
+                        trends, health standards and more efficient ways to pack your products, so you dont have to. Add in custom sizing, materials and printed designs, we provide the total package at a fair and honest price. <br /> <br /> We do all of this,
+                        so you, our customers can focus on pushing your product, rather than packaging it.
+                    </p>
+
+                </div>
+
+                <div class="right-container">
+
+                    <div class="gallery-slide">
+                        <div class="con-flex">
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (2).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                            <!-- Photo Grid -->
+                        </div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <div class="con-flex">
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (2).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                            <!-- Photo Grid -->
+                        </div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <div class="con-flex">
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (2).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
+                            <!-- Photo Grid -->
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+
+                    </div>
+
+                    <script>
+                        //Script for the gallery next and previous
+
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("gallery-slide");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+
+                </div>
+
+            </div>
+
+            <div class="help-you">
+                <h2 class="white" style="margin: 0; text-align: center;">How we can help.</h2>
+                <h3 class="center wrap-text white" style=" width: 80%; margin: 15px auto 0px auto; ">
+                    Getting the edge over the competition is your goal, providing a quality straight-forward solution to achieve this is ours.
                 </h3>
 
+                <div class="one-3-parent">
+                    <div class="one-3-Container">
+                        <section>
+                            <div class="Consult"></div>
+                            <div class="one-3-Container-info">
+                                <div class="p1">Consult</div>
+                                <p>
+                                    Contact us, we’ll find a solution that fits your budget, timeframe and product.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="one-3-Container ">
+                        <section>
+                            <div class="Agree"></div>
+                            <div class="one-3-Container-info">
+                                <div class="p1">Agree</div>
+                                <p>
+                                    Once your happy with the solution, we’ll take a deposit and get your package under way.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="one-3-Container ">
+                        <section>
+                            <div class="Deliver"></div>
+                            <div class="one-3-Container-info">
+                                <div class="p1">Deliver</div>
+                                <p>
+                                    We’ll contact you when the order is complete and make arrangements for delivery.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="h1-mob">
-                On Time, Spec  <br /> <strong>& Budget.</strong>
+        </div>
+
+        <div class="cus-review-bg">
+
+            <a class="prev" onclick="plusReviewSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusReviewSlides(1)">&#10095;</a>
+
+            <div class="cus-review">
+
+
+                <div class="logo-holder">
+                    <img class="logo" src="~/images/Index/customer1.png" alt="Nature" style="width:100%;">
+                </div>
+
+                <div class="review white">
+                    <h2>
+                        "The team were amazing, fast and efficient, we're really stoked with our new Package".
+                        <br /><br /> - Richard B.
+                    </h2>
+
+                </div>
+
             </div>
 
 
-            <div class="mobile-banner-text">
-                We promise to deliver a quality packaging solution to you on time, as per your specifications, at an honest and reasonable price.
+            <div class="cus-review">
 
-                <hr class="dash-line" style="margin-top: 40px;">
+
+                <div class="logo-holder">
+                    <img class="logo" src="~/images/Index/customer1.png" alt="Nature" style="width:100%;">
+                </div>
+
+                <div class="review white">
+                    <h2>
+                        "It is a long established fact that a reader will be distracted by the readable content. ".
+                        <br /><br /> - Lorem Ipsum.
+                    </h2>
+
+                </div>
+
             </div>
 
         </div>
 
 
-    </div>
+        <script>
 
+            //This is the script for the bottom customer review.
+            var slideIndex = 1;
+            showReviewSlides(slideIndex);
 
-    <script>
-        //Start This is for the background slider
-
-        var myIndex = 0;
-        carousel();
-
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("bg-slides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            function plusReviewSlides(n) {
+                showReviewSlides(slideIndex += n);
             }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 2 seconds
-        }
 
-        //End This is for the background slider
-
-
-    </script>
-
-
-    <div style="overflow:auto">
-        <div class="what-we-do">
-
-
-            <div class="left-container line-in-right">
-
-                <h2 class="yellowgreen" style="margin: 0;">What we do</h2>
-                <p class="gray40" style="line-height: 1.8;">
-                    Every customers needs are different so we produce, source and supply a variety of products to meet those needs. <br /> <br /> We work tirelessy to keep on top of global
-                    trends, health standards and more efficient ways to pack your products, so you dont have to. Add in custom sizing, materials and printed designs, we provide the total package at a fair and honest price. <br /> <br /> We do all of this,
-                    so you, our customers can focus on pushing your product, rather than packaging it.
-                </p>
-
-            </div>
-
-            <div class="right-container">
-
-                <div class="con-flex">
-
-                    <div class="single-image"><img src="/images/Index/image.png" class="box-shadow"></div>
-                    <div class="single-image"><img src="/images/Index/image (2).png" class="box-shadow"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (3).png"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
-                    <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
-
-                    <!-- Photo Grid -->
-
-
-                </div>
-
-                <div style="text-align: center;">
-                    <span class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="help-you">
-            <h2 class="white" style="margin: 0; text-align: center;">How we can help.</h2>
-            <h3 class="center wrap-text white" style=" width: 80%; margin: 15px auto 0px auto; ">
-                Getting the edge over the competition is your goal, providing a quality straight-forward solution to achieve this is ours.
-            </h3>
-
-            <div class="one-3-parent">
-                <div class="one-3-Container">
-                    <section>
-                        <div class="Consult"></div>
-                        <div class="one-3-Container-info">
-                            <div class="p1">Consult</div>
-                            <p>
-                                Contact us, we’ll find a solution that fits your budget, timeframe and product.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="one-3-Container ">
-                    <section>
-                        <div class="Agree"></div>
-                        <div class="one-3-Container-info">
-                            <div class="p1">Agree</div>
-                            <p>
-                                Once your happy with the solution, we’ll take a deposit and get your package under way.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="one-3-Container ">
-                    <section>
-                        <div class="Deliver"></div>
-                        <div class="one-3-Container-info">
-                            <div class="p1">Deliver</div>
-                            <p>
-                                We’ll contact you when the order is complete and make arrangements for delivery.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="cus-review-bg">
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-        <div class="cus-review">
-
-
-            <div class="logo-holder">
-                <img class="logo" src="~/images/Index/customer1.png" alt="Nature" style="width:100%;">
-            </div>
-
-            <div class="review white">
-                <h2>"The team were amazing, fast and efficient, we're really stoked with our new Package".</h2>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlidesx");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        
+            function showReviewSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("cus-review");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+               
+                slides[slideIndex - 1].style.display = "block";
+               
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+        </script>
 
-</body>
+
+    </body>

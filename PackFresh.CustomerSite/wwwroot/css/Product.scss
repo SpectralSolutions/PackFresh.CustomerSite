@@ -117,8 +117,8 @@
     margin: 1px;
     border-radius: 2px;
     font-family: arial;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
 }
 
 
@@ -205,7 +205,28 @@ input[type=text], select, textarea {
     height: 170px;
 }
 
+.bottom-banner {
+    width: 920px;
+    margin: 0 auto;
+    height: 170px;
+}
 
+.bottom-banner-p {
+    width: 750px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    padding-top: 62px;
+}
+
+.phone-icon-container {
+    width: 170px;
+    height: 170px;
+    float: right;
+    padding: 35px;
+}
 
 .phone-icon {
     width: 100px;
@@ -214,9 +235,7 @@ input[type=text], select, textarea {
     background-repeat: no-repeat;
     display: inline-block;
     position: relative;
-    background-position: center;
-    float: right;
-    margin-top: 35px;
+
 }
 
 @media screen and (max-width: 1680px) {
@@ -244,10 +263,11 @@ input[type=text], select, textarea {
         font-size: 16px;
     }
 
-
+    .specifications-right {
+        padding-bottom: 100px;
+    }
 
 }
-
 
 @media screen and (max-width: 1200px) {
 
@@ -261,6 +281,10 @@ input[type=text], select, textarea {
 
     .pouch-left {
         padding-bottom: 70px;
+    }
+
+    .specifications-right {
+        padding-bottom: 80px;
     }
 
 }
@@ -290,8 +314,42 @@ input[type=text], select, textarea {
         width: 260px;
         margin: 15px;
     }
-}
 
+    .specifications-right {
+        padding-bottom: 70px;
+    }
+
+    .bottom-info {
+        background: linear-gradient(90deg, #8cc63f, #006837);
+        height: 170px;
+    }
+
+    .bottom-banner {
+        width: 700px;
+    }
+
+    .bottom-banner-p {
+        width: 500px;
+        padding-top: 50px;
+    }
+
+    .phone-icon-container {
+        width: 200px;
+        height: 170px;
+        float: right;
+        padding: 35px 50px;
+    }
+
+    .phone-icon {
+        width: 100px;
+        height: 100px;
+        background-image: url('/images/About/Budget Icon.svg');
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+    }
+
+    }
 @media screen and (max-width: 736px) {
 
     .pouch-right {
@@ -322,7 +380,6 @@ input[type=text], select, textarea {
         float: left;
     }
 
-
     .card-info {
         float: right;
         width: calc(100% - 157.27px);
@@ -338,6 +395,13 @@ input[type=text], select, textarea {
         padding-left: 0px; 
     }
 
+    .specifications-left {
+        padding-bottom: 40px;
+    }
+
+    .specifications-right {
+        padding-bottom: 40px;
+    }
 
     }
 
@@ -357,6 +421,26 @@ input[type=text], select, textarea {
     .card-rect {
         float: none;
         height: 115px;
+    }
+
+    .pouch-h2 {
+        padding-top: 0px;
+    }
+
+    .pouch-left {
+        padding-bottom: 0px;
+    }
+
+    .pouch-right {
+        padding-bottom: 15px;
+    }
+
+    .specifications-left {
+        padding-bottom: 20px;
+    }
+
+    .specifications-right {
+        padding-bottom: 20px;
     }
 
     }

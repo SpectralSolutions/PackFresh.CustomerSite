@@ -1,4 +1,14 @@
-﻿/*#region XXXXXX*/
+﻿/*#region Anurag - TODO*/
+
+/*Change the color of gallery dots, Invisible on lover resolution screen */
+
+/*Ask Corey for redone images for bg-slides and replace with animation */
+
+/*#endregion Anurag - TODO*/
+
+
+
+/*#region XXXXXX*/
 
 
 /*#endregion XXXXXX*/
@@ -48,6 +58,11 @@
     /*#endregion Left*/
 
     /*#region Right*/
+
+
+.gallery-slide {
+    display: none
+}
 
     .con-flex {
         width: 100%;
@@ -536,12 +551,12 @@ img {
             }
 
             .cus-review-bg {
-                height: 180px;
+                height: 190px;
             }
 
             .cus-review {
                 width: 100%;
-                height: 180px;
+                height: 190px;
                 padding: 0;
             }
 
