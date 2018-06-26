@@ -103,6 +103,7 @@ $animationSpeed: 10s;
 
 .img-flex-container > a > div > img:hover {
     transform: scale(1.1);
+    transition-duration: .1s;
 }
 
 

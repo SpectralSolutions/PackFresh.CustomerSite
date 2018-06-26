@@ -38,8 +38,32 @@
 
 /*#endregion XXXXXX*/
 
+/* FADE-IN animation */
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
 
 .top-pouch {
     width: 1332px;
@@ -83,6 +107,8 @@
     background: white;
     padding-bottom: 90px;
     padding-top: 90px;
+    animation-name:fadeIn;
+    animation-duration: 2s;
 }
 
 
