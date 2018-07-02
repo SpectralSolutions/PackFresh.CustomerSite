@@ -55,7 +55,8 @@
   float: left;
   opacity: 1;
   padding: 85px 3%;
-  height: 650px; }
+  height: 650px;
+  margin-top: 10px; }
 
 .single-image {
   width: 25%;
