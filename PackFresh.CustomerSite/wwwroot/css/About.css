@@ -90,7 +90,7 @@ img {
   background-size: 40%; }
 
 .photo-container {
-  padding: 2.5% 0px;
+  padding: 2% 0px;
   width: 60%;
   float: right;
   height: 590px;
@@ -233,7 +233,7 @@ img {
 
 @media screen and (max-width: 1680px) {
   .photo-container {
-    padding: 80px 0px; }
+    padding: 70px 0px; }
   .side-content {
     padding: 6em 4em; } }
 
@@ -245,7 +245,7 @@ img {
 
 @media screen and (max-width: 1200px) {
   .photo-container {
-    padding: 45px 0px;
+    padding: 50px 0px;
     margin-top: 0px; }
   .side-content {
     padding: 2em 4em; }
@@ -280,7 +280,11 @@ img {
     padding: 4em 3em; }
   .slide-info-about {
     left: 60px;
-    width: 420px; } }
+    width: 420px; }
+  .single-image {
+    width: 170px;
+    height: 135px;
+    margin: 10px; } }
 
 @media screen and (max-width: 740px) {
   .side-content {
