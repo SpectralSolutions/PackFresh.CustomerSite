@@ -80,29 +80,87 @@
 
         <section id="section04" class="relative">
             <div style="width: 55%;">
-                <div class="logo-flex-container">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
-                    <img src="~/images/About/Our Client Logo example.jpg">
+                <!-- Photo Grid -->
+
+                <div class="photo-container-client">
+                    <div class="gallery-slide">
+                        <div class="con-flex">
+                            <div class="single-image"><img class="box-shadow" src="~/images/About/Clients/download1.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download2.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="~/images/About/Clients/download3.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download4.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download5.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download6.png"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-slide">
+                        <div class="con-flex">
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download5.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download6.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="~/images/About/Clients/download1.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download2.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="~/images/About/Clients/download3.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download4.png"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-slide">
+                        <div class="con-flex">
+                            <div class="single-image"><img class="box-shadow" src="~/images/About/Clients/download3.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download4.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="~/images/About/Clients/download1.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download2.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download5.png"></div>
+                            <div class="single-image"><img class="box-shadow" src="/images/About/Clients/download6.png"></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+
+                    </div>
+
+                    <script>
+                        //Script for the gallery next and previous
+
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("gallery-slide");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+
+
                 </div>
-            </div>
+
+                    <!-- Photo Grid -->
+                </div>
 
 
             <div data-position="right" data-offset="250" class="side-content notViewed animBlock" style="border-left: 5px solid #92A62C;">
@@ -150,8 +208,8 @@
             <div>
                 <div class="one-3-parent">
 
-                    <h2>
-                        We live this by delivering a quality product:
+                    <h2 style="text-align: center; line-height: 1.4; font-size: 23px;">
+                        We live this by delivering a quality product
                     </h2>
 
                     <div class="one-3-Container">

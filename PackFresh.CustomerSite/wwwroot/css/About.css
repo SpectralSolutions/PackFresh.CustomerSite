@@ -90,7 +90,7 @@ img {
   background-size: 40%; }
 
 .photo-container {
-  padding: 2% 0px;
+  padding: 35px 0px;
   width: 60%;
   float: right;
   height: 590px;
@@ -111,19 +111,27 @@ img {
 
 /*#endregion Section03*/
 /*#region Section04*/
-.logo-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 58%;
-  margin: auto; }
+.photo-container-client {
+  padding: 45px 0px;
+  height: 590px; }
 
-.logo-flex-container > img {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px; }
+.gallery-slide {
+  display: none; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 2px solid #cccccc; }
+
+.active, .dot:hover {
+  background-color: #92A62C !important; }
 
 /*#endregion Section04*/
 /*#region Section05*/
@@ -158,29 +166,32 @@ img {
 .Time {
   background-image: url("/images/About/Time Icon.svg");
   width: 135px;
-  height: 175px;
+  height: 135px;
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  background-position: center; }
+  background-position: center;
+  margin: 35px 0 0 0; }
 
 .Spec {
   background-image: url("/images/About/Spec Icon.svg");
   width: 135px;
-  height: 175px;
+  height: 135px;
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  background-position: center; }
+  background-position: center;
+  margin: 35px 0 0 0; }
 
 .Budget {
   background-image: url("/images/About/Budget Icon.svg");
   width: 135px;
-  height: 175px;
+  height: 135px;
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  background-position: center; }
+  background-position: center;
+  margin: 35px 0 0 0; }
 
 .Consult {
   background-image: url("/images/Index/Consult Icon.svg");
@@ -234,17 +245,36 @@ img {
 @media screen and (max-width: 1680px) {
   .photo-container {
     padding: 70px 0px; }
+  .photo-container-client {
+    padding: 70px 0px; }
   .side-content {
     padding: 6em 4em; } }
 
 @media screen and (max-width: 1440px) {
   .photo-container {
     padding: 110px 0px; }
+  .photo-container-client {
+    padding: 110px 0px; }
   .side-content {
-    padding: 5em 4em; } }
+    padding: 5em 4em; }
+  .Time {
+    width: 120px;
+    height: 120px; }
+  .Spec {
+    width: 120px;
+    height: 120px; }
+  .Budget {
+    width: 120px;
+    height: 120px; }
+  .one-3-parent {
+    padding-left: 47%;
+    padding-right: 7%; } }
 
 @media screen and (max-width: 1200px) {
   .photo-container {
+    padding: 40px 0px;
+    margin-top: 0px; }
+  .photo-container-client {
     padding: 50px 0px;
     margin-top: 0px; }
   .side-content {
@@ -257,15 +287,29 @@ img {
     justify-content: center;
     padding-bottom: 15px; }
   .single-image {
-    width: 187px;
-    height: 148px;
+    width: 170px;
+    height: 140px;
     margin: 10px; }
   .slide-info-about {
     left: 100px;
     width: 550px;
-    bottom: 30%; } }
+    bottom: 30%; }
+  .one-3-parent {
+    padding-left: 44%;
+    padding-right: 4%; }
+  .Time {
+    width: 110px;
+    height: 110px; }
+  .Spec {
+    width: 110px;
+    height: 110px; }
+  .Budget {
+    width: 110px;
+    height: 110px; } }
 
 @media screen and (max-width: 960px) {
+  .section05 {
+    height: 500px; }
   .Contact-banner {
     height: 140px; }
   .CB-container {
