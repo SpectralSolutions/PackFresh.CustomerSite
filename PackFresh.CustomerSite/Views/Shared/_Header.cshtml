@@ -26,17 +26,52 @@
 
         <i><a onclick="on()" class="menu-icon"></a></i>
 
+   
+</div>
 
-        <div id="overlay" onclick="off()">
-            <div id="text">Overlay Text</div>
+
+<div id="overlay" onclick="off()">
+    <div class="wrap">
+        <div class="wrap-nav">
+            <h4>
+                <a href="/">Home</a>
+            </h4>
+
+            <hr class="solid-line1">
+
+
+            <h4>
+                <a href="/Home/Products">Products</a>
+
+            </h4>
+
+            <hr class="solid-line1">
+
+            <h4>
+                <a href="/Home/About">About Us</a>
+
+            </h4>
+
+            <hr class="solid-line1">
+
+            <h4>
+                <a href="/Home/Contact">Contact</a>
+            </h4>
+
         </div>
-    
+    </div>
 </div>
 
 
 <script>
     function on() {
-        document.getElementById("overlay").style.display = "block";
+
+        var x = document.getElementById("overlay");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
     }
 
     function off() {

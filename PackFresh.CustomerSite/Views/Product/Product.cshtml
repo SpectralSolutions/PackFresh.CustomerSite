@@ -1,0 +1,27 @@
+﻿@model PackFresh.CustomerSite.Models.Product
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+
+
+<h2>Welcome</h2>
+
+<ul>
+
+    <li>@ViewData["id"]</li>
+
+    <li> @Model.ID</li>
+    <li> @Model.RangeName</li>
+    <li> @Model.Description</li>
+    <li> @Model.Range[0].SubRange</li>
+
+
+
+    @for (int i = 0; i < Model.Range.Count(); i++)
+    {
+        <li> @Model.Range[i].ProductProduct</li>
+    }
+
+</ul>

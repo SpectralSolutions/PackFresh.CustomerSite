@@ -78,7 +78,7 @@ div > a {
             width: 100%;
             border: none;
             border: 1px solid #ccc;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             margin-top: 55px;
             height: 310px;
         }
@@ -136,7 +136,7 @@ div > a {
             font-size: 12px;
             cursor: auto;
             position: relative;
-            background: #999999;
+            background: #3E7830;
             white-space: nowrap;
             display: inline-block;
         }
@@ -171,13 +171,11 @@ div > a {
 }
 
 /* Mobile */
-@media screen and (max-width: 736px) {
-
+@media screen and (max-width: 740px) {
 
     .line-in-right {
         border: 0;
     }
-
 
     .contact-right-container {
         width: 100%;
@@ -190,9 +188,13 @@ div > a {
         width: 100%;
         padding-right: 8%;
         padding-left: 8%;
-        height: 710px;
+        height: auto;
+        ;
     }
- 
+
+    #map {
+        margin-top: 8%;
+      }
 }
 
 /* Mobile (Portrait) */
@@ -201,6 +203,22 @@ div > a {
    
     .line-in-right {
         border: 0;
+    }
+
+    .icon-size {
+        height: 25px;
+        width: 25px;
+        margin-right: 15px;
+        margin-bottom: 14px;
+    }
+
+        #map {
+        height: 260px;
+
+    }
+
+    .contact-column > div > a {
+        font-size: 14px;
     }
 }
 

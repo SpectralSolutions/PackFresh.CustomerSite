@@ -38,8 +38,32 @@
 
 /*#endregion XXXXXX*/
 
+/* FADE-IN animation */
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
 
 .top-pouch {
     width: 1332px;
@@ -83,6 +107,8 @@
     background: white;
     padding-bottom: 90px;
     padding-top: 90px;
+    animation-name:fadeIn;
+    animation-duration: 2s;
 }
 
 
@@ -117,8 +143,8 @@
     margin: 1px;
     border-radius: 2px;
     font-family: arial;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
 }
 
 
@@ -205,18 +231,37 @@ input[type=text], select, textarea {
     height: 170px;
 }
 
+.bottom-banner {
+    width: 920px;
+    margin: 0 auto;
+    height: 170px;
+}
 
+.bottom-banner-p {
+    width: 785px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    padding: 62px 12.5px;
+}
+
+.phone-icon-container {
+    width: 135px;
+    height: 170px;
+    float: right;
+    padding: 35px 25px 35px 12.5px;
+}
 
 .phone-icon {
     width: 100px;
     height: 100px;
-    background-image: url('/images/About/About Us Piggybank.svg');
+    background-image: url('/images/About/Budget Icon.svg');
     background-repeat: no-repeat;
     display: inline-block;
     position: relative;
-    background-position: center;
-    float: right;
-    margin-top: 35px;
+
 }
 
 @media screen and (max-width: 1680px) {
@@ -244,10 +289,11 @@ input[type=text], select, textarea {
         font-size: 16px;
     }
 
-
+    .specifications-right {
+        padding-bottom: 100px;
+    }
 
 }
-
 
 @media screen and (max-width: 1200px) {
 
@@ -261,6 +307,10 @@ input[type=text], select, textarea {
 
     .pouch-left {
         padding-bottom: 70px;
+    }
+
+    .specifications-right {
+        padding-bottom: 80px;
     }
 
 }
@@ -290,8 +340,42 @@ input[type=text], select, textarea {
         width: 260px;
         margin: 15px;
     }
-}
 
+    .specifications-right {
+        padding-bottom: 70px;
+    }
+
+    .bottom-info {
+        background: linear-gradient(90deg, #8cc63f, #006837);
+        height: 170px;
+    }
+
+    .bottom-banner {
+        width: 650px;
+    }
+
+    .bottom-banner-p {
+        width: 515px;
+        padding: 62px 1px;
+    }
+
+    .phone-icon-container {
+        width: 135px;
+        height: 170px;
+        float: right;
+        padding: 35px 0px 35px 35px;
+    }
+
+    .phone-icon {
+        width: 100px;
+        height: 100px;
+        background-image: url('/images/About/Budget Icon.svg');
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+    }
+
+    }
 @media screen and (max-width: 736px) {
 
     .pouch-right {
@@ -322,7 +406,6 @@ input[type=text], select, textarea {
         float: left;
     }
 
-
     .card-info {
         float: right;
         width: calc(100% - 157.27px);
@@ -338,6 +421,41 @@ input[type=text], select, textarea {
         padding-left: 0px; 
     }
 
+    .specifications-left {
+        padding-bottom: 40px;
+    }
+
+    .specifications-right {
+        padding-bottom: 40px;
+    }
+
+    .bottom-info {
+        height: 140px;
+    }
+
+    .bottom-banner {
+        width: 90%;
+        height: 140px;
+    }
+
+    .bottom-banner-p {
+        width: calc(100% - 100px);
+        padding: 30px 1px;
+    }
+
+    .phone-icon-container {
+        width: 100px;
+        padding: 30px 0px 30px 20px;
+    }
+
+    .phone-icon {
+        width: 80px;
+        height: 80px;
+        background-image: url('/images/About/Budget Icon.svg');
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+    }
 
     }
 
@@ -357,6 +475,44 @@ input[type=text], select, textarea {
     .card-rect {
         float: none;
         height: 115px;
+    }
+
+    .pouch-h2 {
+        padding-top: 0px;
+    }
+
+    .pouch-left {
+        padding-bottom: 0px;
+    }
+
+    .pouch-right {
+        padding-bottom: 15px;
+    }
+
+    .specifications-left {
+        padding-bottom: 20px;
+    }
+
+    .specifications-right {
+        padding-bottom: 20px;
+    }
+
+    .bottom-banner-p {
+        width: calc(100% - 80px);
+        padding: 20px 1px;
+        height: 140px;
+    }
+
+    .phone-icon-container {
+        width: 80px;
+        height: 140px;
+        float: right;
+        padding: 40px 0px 40px 20px;
+    }
+
+    .phone-icon {
+        width: 60px;
+        height: 60px;
     }
 
     }

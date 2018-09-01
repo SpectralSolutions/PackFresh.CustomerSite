@@ -1,6 +1,8 @@
-﻿/*#region XXXXXX*/
+﻿/*#region Anurag - TODO*/
 
-/*#endregion XXXXXX*/
+/*Change Transform and slide width when actual image and actual width of alll image is done */ 
+
+/*#endregion Anurag - TODO*/
 
 /*#region Auto Slide */
 
@@ -88,19 +90,20 @@ $animationSpeed: 10s;
     justify-content: center;
 }
 
-.img-flex-container > div {
+.img-flex-container > a > div {
     background-color: white;
     padding: 12px;
 }
 
-.img-flex-container > div > img {
+.img-flex-container > a > div > img {
     width: 190px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.33);
     border-radius: 3px;
 }
 
-.img-flex-container > div > img:hover {
+.img-flex-container > a > div > img:hover {
     transform: scale(1.1);
+    transition-duration: .1s;
 }
 
 
@@ -113,7 +116,7 @@ $animationSpeed: 10s;
         width: 900px;
     }
 
-    .img-flex-container > div > img {
+    .img-flex-container > a > div > img {
         width: 200px;
     }
 
@@ -146,6 +149,20 @@ $animationSpeed: 10s;
         width: 85%;
         padding-bottom: 20px;
     }
+
+    .slider {
+        height: 200px;
+    }
+
+    .slider .slide {
+        height: 200px;
+        width: auto;
+    }
+
+    .slide > img {
+        height : 200px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -159,7 +176,7 @@ $animationSpeed: 10s;
         width: calc(50% - 15px);
     }
 
-    .img-flex-container > div > img {
+    .img-flex-container > a > div > img {
         width: 100%;
     }
 }
