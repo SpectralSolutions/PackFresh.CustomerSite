@@ -1,27 +1,46 @@
-﻿/*#region Right Floater*/
-#float {
-  position: fixed;
-  width: 109px;
-  top: 90px;
-  background-color: #777;
-  color: #2ba738;
-  text-align: center;
-  box-shadow: 2px 2px 3px #999;
-  right: 0px;
-  display: none; }
+﻿/*#region XXXXXX*/
+/*#endregion XXXXXX*/
+/*#region XXXXXX*/
+/*#endregion XXXXXX*/
+/*#region XXXXXX*/
+/*#endregion XXXXXX*/
+/*#region XXXXXX*/
+/*#endregion XXXXXX*/
+/*#region Auto Slide */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
 
-.each-float {
-  margin-top: 7px; }
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .slider .slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  .slider .slide {
+    height: 400px;
+    width: 100%; }
 
-/*#endregion XXXXXX*/
-/*#region XXXXXX*/
-/*#endregion XXXXXX*/
-/*#region XXXXXX*/
-/*#endregion XXXXXX*/
-/*#region XXXXXX*/
-/*#endregion XXXXXX*/
-/*#region XXXXXX*/
-/*#endregion XXXXXX*/
+/*#endregion Auto Slide*/
+/*#region Solid Line*/
+.solid-line-relative {
+  border: 0 none;
+  border-top: 8px solid #92A62C;
+  background: none;
+  height: 0;
+  width: 100%;
+  position: relative;
+  margin: 0; }
+
+/*#endregion Solid Line*/
 /* FADE-IN animation */
 @-webkit-keyframes fadeIn {
   from {
