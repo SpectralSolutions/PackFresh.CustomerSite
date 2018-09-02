@@ -10,64 +10,36 @@
 
     <body>
 
-
-        <script>
-            function onStory() {
-                document.getElementById("story").style.display = "block";
-                document.getElementById("main").style.display = "none";
-                document.getElementById("people").style.display = "none";
-                document.getElementById("promise").style.display = "none";
-                document.getElementById("float").style.display = "block";
-            }
-
-            function onPeople() {
-                document.getElementById("story").style.display = "none";
-                document.getElementById("main").style.display = "none";
-                document.getElementById("people").style.display = "block";
-                document.getElementById("promise").style.display = "none";
-                document.getElementById("float").style.display = "block";
-
-            }
-
-            function onPromise() {
-                document.getElementById("story").style.display = "none";
-                document.getElementById("main").style.display = "none";
-                document.getElementById("people").style.display = "none";
-                document.getElementById("promise").style.display = "block";
-                document.getElementById("float").style.display = "block";
-            }
-
-            function onClients() {
-                document.getElementById("story").style.display = "none";
-                document.getElementById("main").style.display = "none";
-                document.getElementById("people").style.display = "none";
-                document.getElementById("clients").style.display = "block";
-                document.getElementById("float").style.display = "block";
-            }
-
-        </script>
-
-        <div id="float">
-            <button class="each-float" onclick="onStory()"> Our Products </button>
-            <button class="each-float" onclick="onPeople()"> Nature-Flex Range </button>
-            <button class="each-float" onclick="onPromise()"> Polypropylene Range  </button>
-            <button class="each-float" onclick="onClients()"> Micro Perforated  </button>
-            <button class="each-float" onclick="onStory()"> Our Products </button>
-            <button class="each-float" onclick="onPeople()"> Nature-Flex Range </button>
-            <button class="each-float" onclick="onPromise()"> Polypropylene Range  </button>
-            <button class="each-float" onclick="onClients()"> Micro Perforated  </button>
-            <button class="each-float" onclick="onStory()"> Our Products </button>
-            <button class="each-float" onclick="onPeople()"> Nature-Flex Range </button>
-            <button class="each-float" onclick="onPromise()"> Polypropylene Range  </button>
-            <button class="each-float" onclick="onClients()"> Micro Perforated  </button>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 1.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 2.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 3.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 4.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 1.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 2.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 3.png" height="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Products/Slide/slide 4.png" height="400" alt="" />
+                </div>
+            </div>
         </div>
 
-        @*END BLOCK FOR LEFT RIGHT FLOAT MENU*@
-
-
-        <div style="padding-top:70px">
-            <div><img src="~/images/Products/Temp BG-100.jpg" style="width:100%"></div>
-        </div>
+        <hr class="solid-line-relative">
 
         <div class="top-pouch">
 
@@ -225,7 +197,8 @@
                 </div>
 
                 <div class="phone-icon-container">
-                    <div class="phone-icon"></div></div>
+                    <div class="phone-icon"></div>
+                </div>
             </div>
 
         </div>
