@@ -263,23 +263,6 @@ img {
 }
 
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    border: 2px solid #cccccc;
-}
-
-.active, .dot:hover {
-    background-color: #92A62C !important;
-}
-
 /* Fading animation */
 .fadex {
     -webkit-animation-name: fade;
@@ -530,17 +513,6 @@ img {
                 margin-bottom: 0px !important;
             }
 
-            .dot {
-                cursor: pointer;
-                height: 15px;
-                width: 15px;
-                margin: 0 2px;
-                background-color: transparent;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.6s ease;
-                border: 1px solid #cccccc;
-            }
         }
         
         /* Narrower */

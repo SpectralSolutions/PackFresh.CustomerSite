@@ -8,8 +8,8 @@ img {
 .sections {
   position: relative; }
 
-hr {
-  display: block;
+.dash-line {
+  display: none;
   border: 0 none;
   border-top: 2px dashed rgba(0, 0, 0, 0.1);
   background: none;
@@ -17,6 +17,9 @@ hr {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 0px; }
+
+.mobile-content {
+  display: none; }
 
 /*#endregion General*/
 /*#region Sliding Animation*/
@@ -103,7 +106,8 @@ hr {
   background-image: url("../images/About/background.png");
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 40%; }
+  background-size: 40%;
+  height: 600px; }
 
 .photo-container {
   padding: 35px 0px;
@@ -137,21 +141,6 @@ hr {
 .gallery-slide {
   display: none; }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  margin: 0 2px;
-  background-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  border: 2px solid #cccccc; }
-
-.active, .dot:hover {
-  background-color: #92A62C !important; }
-
 /*#endregion Section04*/
 /*#region Section05*/
 .section05 {
@@ -162,14 +151,11 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  padding-top: 90px;
+  padding-top: 120px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   color: #ffffff; }
 
 .one-3-parent {
-  /*width: 850px;
-    margin: auto;
-    float: right;*/
   padding-left: 50%;
   padding-right: 10%; }
 
@@ -328,7 +314,8 @@ hr {
 
 @media screen and (max-width: 960px) {
   .section05 {
-    height: 500px; }
+    padding-top: 80px;
+    height: 550px; }
   .Contact-banner {
     height: 140px; }
   .CB-container {
@@ -349,7 +336,16 @@ hr {
     height: 135px;
     margin: 10px; }
   .mobile-content {
-    display: none; } }
+    display: none; }
+  .Time {
+    width: 100px;
+    height: 100px; }
+  .Spec {
+    width: 100px;
+    height: 100px; }
+  .Budget {
+    width: 100px;
+    height: 100px; } }
 
 @media screen and (max-width: 740px) {
   .side-content {
@@ -371,15 +367,18 @@ hr {
     opacity: 0; }
   #section03 {
     background-image: unset;
-    background-size: unset; }
+    background-size: unset;
+    height: auto; }
   .con-flex {
     width: 100%; }
   .photo-container {
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding: 20px 2%; }
   .photo-container-client {
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding: 20px 2%; }
   .single-image {
     width: 41%;
     height: auto;
@@ -393,7 +392,20 @@ hr {
     height: 260px; }
   .man {
     height: 260px;
-    width: 220px; } }
+    width: 220px; }
+  .dash-line {
+    display: block; }
+  .section05 {
+    height: 500px; }
+  .Time {
+    width: 110px;
+    height: 110px; }
+  .Spec {
+    width: 110px;
+    height: 110px; }
+  .Budget {
+    width: 110px;
+    height: 110px; } }
 
 @media screen and (max-width: 620px) {
   .slide-info-about {
@@ -403,15 +415,28 @@ hr {
     margin-left: 12%;
     visibility: visible;
     animation-name: fadeIn;
-    animation-duration: 1.5s; } }
-
-@media screen and (max-width: 480px) {
-  .Contact-banner {
-    display: none;
-    visibility: hidden; }
-  .about-mob {
-    top: 36%;
-    margin-left: 12%; } }
+    animation-duration: 1.5s; }
+  .Time {
+    width: 90px;
+    height: 90px;
+    margin: 20px 0 0 0; }
+  .Spec {
+    width: 90px;
+    height: 90px;
+    margin: 20px 0 0 0; }
+  .Budget {
+    width: 90px;
+    height: 90px;
+    margin: 20px 0 0 0; }
+  .one-3-container-info > h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  .section05 {
+    height: 360px;
+    padding-top: 20px; }
+  .one-3-Container {
+    margin-top: 10px; } }
 
 @media screen and (max-width: 480px) {
   .Contact-banner {
@@ -420,5 +445,30 @@ hr {
   .about-mob {
     top: 36%;
     margin-left: 12%;
-    font-size: 25px; } }
+    font-size: 25px; }
+  .mobile-content {
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-top: 30px;
+    text-align: center; }
+  .section05 {
+    height: 330px; }
+  .man {
+    margin-left: calc(50% - 110px); }
+  .one-3-parent {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .one-3-Container {
+    background-color: unset;
+    border: unset;
+    margin-top: 0px; }
+  .Time {
+    width: 70px;
+    height: 70px; }
+  .Spec {
+    width: 70px;
+    height: 70px; }
+  .Budget {
+    width: 70px;
+    height: 70px; } }
 
