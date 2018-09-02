@@ -14,8 +14,8 @@ img {
     position: relative;
 }
 
-hr {
-    display: block;
+.dash-line {
+    display: none;
     border: 0 none;
     border-top: 2px dashed rgba(0, 0, 0, 0.1);
     background: none;
@@ -23,6 +23,10 @@ hr {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 0px;
+}
+
+.mobile-content {
+    display: none;
 }
 
 /*#endregion General*/
@@ -132,6 +136,7 @@ hr {
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 40%;
+    height: 600px;
 }
 
 .photo-container {
@@ -176,26 +181,6 @@ hr {
     display: none;
 }
 
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    border: 2px solid #cccccc;
-}
-
-.active, .dot:hover {
-    background-color: #92A62C !important;
-}
-
-
-
 /*#endregion Section04*/
 
 
@@ -211,15 +196,12 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    padding-top: 90px;
+    padding-top: 120px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     color: #ffffff;
 }
 
 .one-3-parent {
-    /*width: 850px;
-    margin: auto;
-    float: right;*/
     padding-left: 50%;
     padding-right: 10%;
 }
@@ -353,7 +335,6 @@ hr {
 
 }
 
-
 @media screen and (max-width: 1200px) {
 
     .photo-container {
@@ -405,12 +386,12 @@ hr {
 
 }
 
-
 @media screen and (max-width: 960px) {
 
-        .section05 {
-            height: 500px;
-        }
+    .section05 {
+        padding-top: 80px;
+        height: 550px;
+    }
 
         .Contact-banner {
             height: 140px;
@@ -450,9 +431,16 @@ hr {
         display:none;
     }
 
+    @each $name in 'Time' 'Spec' 'Budget' {
+        .#{$name} {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
 }
 
-        @media screen and (max-width: 740px) {
+@media screen and (max-width: 740px) {
 
             .side-content {
                 padding: 4em 2em;
@@ -484,6 +472,7 @@ hr {
             #section03 {
                 background-image: unset; 
                  background-size: unset; 
+                 height: auto;
             }
 
             .con-flex {
@@ -493,11 +482,13 @@ hr {
             .photo-container {
                 width: 100%;
                 height: auto;
+                padding: 20px 2%;
             }
 
             .photo-container-client {
                 width: 100%;
                 height: auto;
+                padding: 20px 2%;
             }
 
             .single-image {
@@ -524,11 +515,25 @@ hr {
                 width: 220px;
             }
 
+            .dash-line{
+                display: block;
+            }
+
+            .section05 {
+                height: 500px;
+            }
+
+            @each $name in 'Time' 'Spec' 'Budget' {
+        .#{$name} {
+            width: 110px;
+            height: 110px;
+        }
+    }
+
 
         }
 
-
-        @media screen and (max-width: 620px) {
+@media screen and (max-width: 620px) {
 
             .slide-info-about {
                 display:none
@@ -542,25 +547,32 @@ hr {
                 animation-duration: 1.5s;
             }
 
+            @each $name in 'Time' 'Spec' 'Budget' {
+                .#{$name} {
+                    width: 90px;
+                    height: 90px;
+                    margin: 20px 0 0 0;
+                }
+            }
+
+            .one-3-container-info > h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .section05 {
+                height: 360px;
+                padding-top: 20px;
+            }
+
+            .one-3-Container {
+                margin-top: 10px;
+            }
 
         }
 
-        @media screen and (max-width: 480px) {
-
-            .Contact-banner {
-                display: none;
-                visibility: hidden;
-            }
-
-            .about-mob {
-                top: 36%;
-                margin-left: 12%;
-            }
-
-
-        }
-
-         @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
             .Contact-banner {
                 display: none;
@@ -573,5 +585,39 @@ hr {
                 font-size: 25px;
             }
 
+            .mobile-content {
+                padding-right: 6%;
+                padding-left: 6%;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .section05 {
+                height: 330px;
+            }
+
+            .man {
+                margin-left: calc(50% - 110px);
+            }
+
+            .one-3-parent {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .one-3-Container {
+                background-color: unset;
+                border: unset;
+                margin-top: 0px;
+            }
+
+            @each $name in 'Time' 'Spec' 'Budget' {
+                .#{$name} {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
 
         }
+
