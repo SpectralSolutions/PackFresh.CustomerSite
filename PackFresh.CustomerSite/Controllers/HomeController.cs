@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PackFresh.CustomerSite.Models;
 using System.Net.Mail;
+using PackFresh.CustomerSite.Services;
 
 namespace PackFresh.CustomerSite.Controllers
 {
@@ -51,24 +52,8 @@ namespace PackFresh.CustomerSite.Controllers
             {
                 Contact contact = new ContactViewModelFactory().generateContactFromCreateContactViewModel(model);
 
-                MailMessage msz = new MailMessage();
-                msz.From = new MailAddress(contact.Email); 
-
-                msz.To.Add("silwal.anurag@gmail.com"); //Where mail will be sent (Pack Fresh Customer Team)
-                msz.Subject = contact.Subject;
-                msz.Body = "From: " + contact.Name + " Company: " + contact.Company + "Phone: " + contact.Phone + " Message: " + contact.Message;
-                SmtpClient smtp = new SmtpClient();
-
-                smtp.Host = "smtp.gmail.com";
-
-                smtp.Port = 587;
-
-                smtp.Credentials = new System.Net.NetworkCredential
-                ("teamauk124@gmail.com", "CPPTeam124");
-
-                smtp.EnableSsl = true;
-
-                smtp.Send(msz);
+                EmailSender es = new EmailSender();
+                es.ReceiveMail(contact);
 
                 ModelState.Clear();
                 ViewBag.Message = "Thank you for Contacting us ";

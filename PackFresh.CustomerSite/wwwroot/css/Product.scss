@@ -288,6 +288,17 @@ input[type=text], select, textarea {
     padding: 62px 12.5px;
 }
 
+.mobile-bottom-banner-p {
+    display: none;
+    width: 785px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    padding: 62px 12.5px;
+}
+
 .phone-icon-container {
     width: 135px;
     height: 170px;
@@ -419,6 +430,19 @@ input[type=text], select, textarea {
     }
 @media screen and (max-width: 736px) {
 
+    .slider {
+        height: 200px;
+    }
+
+    .slider .slide {
+        height: 200px;
+        width: auto;
+    }
+
+    .slide > img {
+        height: 200px;
+    }
+
     .pouch-right {
         padding: 0px;
         padding-bottom: 40px;
@@ -480,6 +504,11 @@ input[type=text], select, textarea {
     }
 
     .bottom-banner-p {
+        display: none;
+    }
+
+    .mobile-bottom-banner-p {
+        display: block;
         width: calc(100% - 100px);
         padding: 30px 1px;
     }
@@ -497,6 +526,7 @@ input[type=text], select, textarea {
         display: inline-block;
         position: relative;
     }
+
 
     }
 
@@ -538,7 +568,7 @@ input[type=text], select, textarea {
         padding-bottom: 20px;
     }
 
-    .bottom-banner-p {
+    .mobile-bottom-banner-p {
         width: calc(100% - 80px);
         padding: 20px 1px;
         height: 140px;

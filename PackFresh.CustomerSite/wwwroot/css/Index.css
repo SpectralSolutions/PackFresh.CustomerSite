@@ -3,6 +3,10 @@
 /*Ask Corey for redone images for bg-slides and replace with animation */
 /*#endregion Anurag - TODO*/
 /*#region XXXXXX*/
+.bg-slides {
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
 /*#endregion XXXXXX*/
 /*#region What we do*/
 /*#region Background*/
@@ -95,6 +99,9 @@
   border: solid 1.25px rgba(255, 255, 255, 0.33);
   margin: auto 1.5%;
   padding: 20px 0; }
+
+.one-3-Container:hover {
+  box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2); }
 
 .one-3-Container-info {
   padding: 0 15px; }
