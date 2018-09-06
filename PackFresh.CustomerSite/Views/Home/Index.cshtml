@@ -168,6 +168,8 @@
 
                     <div class="gallery-slide">
                         <div class="con-flex">
+                            @*<div onclick="openModal();currentSlide(1)" class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>*@
+
                             <div class="single-image"><img class="box-shadow" src="/images/Index/image (4).png"></div>
                             <div class="single-image"><img class="box-shadow" src="/images/Index/image (5).png"></div>
                             <div class="single-image"><img class="box-shadow" src="/images/Index/image (1).png"></div>
@@ -177,6 +179,84 @@
                             <!-- Photo Grid -->
                         </div>
                     </div>
+
+
+                    <div id="imageModal" class="imageModal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="gallerySlides">
+                                <img src="/images/Index/image (4).png" style="width:100%">
+                            </div>
+
+                            <div class="gallerySlides">
+                                <img src="/images/Index/image (5).png" style="width:100%">
+                            </div>
+
+                            <div class="gallerySlides">
+                                <img src="/images/Index/image (1).png" style="width:100%">
+                            </div>
+
+                            <div class="gallerySlides">
+                                <img src="/images/Index/image.png" style="width:100%">
+                            </div>
+
+                            <div class="gallerySlides">
+                                <img src="/images/Index/image (2).png" style="width:100%">
+                            </div>
+
+                            <div class="gallerySlides">
+                                <img src="/images/Index/image (3).png" style="width:100%">
+                            </div>
+
+                            <a class="galleryPrev" onclick="plusGallerySlides(-1)">&#10094;</a>
+                            <a class="galleryNext" onclick="plusGallerySlides(1)">&#10095;</a>
+
+                        </div>
+                    </div>
+
+                    <script>
+
+                        var body = document.getElementsByTagName("BODY")[0];
+
+                        function openModal() {
+                            document.getElementById('imageModal').style.display = "block";
+                            document.body.style.overflow = 'hidden';
+                        }
+
+                        function closeModal() {
+                            document.getElementById('imageModal').style.display = "none";
+                            document.body.style.overflow = 'unset';
+                        }
+
+                        var slideIndex = 1;
+                        showGallerySlides(slideIndex);
+
+                        function plusGallerySlides(n) {
+                            showGallerySlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showGallerySlides(slideIndex = n);
+                        }
+
+                        function showGallerySlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("gallerySlides");
+
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+
+                            slides[slideIndex - 1].style.display = "block";
+
+                        }
+
+
+                    </script>
+
 
                     <div class="gallery-slide">
                         <div class="con-flex">
