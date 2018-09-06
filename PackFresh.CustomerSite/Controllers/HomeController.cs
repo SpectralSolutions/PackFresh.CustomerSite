@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PackFresh.CustomerSite.Models;
+using System.Net.Mail;
+using PackFresh.CustomerSite.Services;
 
 namespace PackFresh.CustomerSite.Controllers
 {
@@ -39,6 +41,31 @@ namespace PackFresh.CustomerSite.Controllers
             ViewData["Message"] = "Your contact page.";
 
             return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Contact(Contact model)
+        {
+
+            try
+            {
+                Contact contact = new ContactViewModelFactory().generateContactFromCreateContactViewModel(model);
+
+                EmailSender es = new EmailSender();
+                es.ReceiveMail(contact);
+
+                ModelState.Clear();
+                ViewBag.Message = "Thank you for Contacting us ";
+            }
+            catch (Exception ex)
+            {
+                ModelState.Clear();
+                ViewBag.Message = $" Sorry we are facing Problem here {ex.Message}";
+            }
+
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult Error()

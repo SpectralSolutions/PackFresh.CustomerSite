@@ -1,4 +1,5 @@
-﻿@{
+﻿@model PackFresh.CustomerSite.Models.Contact
+@{
     ViewData["Title"] = "Contact";
 }
 
@@ -6,7 +7,6 @@
     {
     <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
-    <script src="~/js/contact.js" asp-append-version="true"></script>
 }
 
 
@@ -33,7 +33,7 @@
 </section>
 
 <div class="contactus-container" id="message-map">
-    
+
     <div class="mobile-banner-text">
         Got Questions? Are you looking for a <strong style="color:darkgreen">greener</strong> alternative or a custom packaging solution but you don’t know where you should start. <strong>We have the answers.</strong>
         <hr class="dash-line" style="margin-top: 30px;">
@@ -92,7 +92,7 @@
             </div>
 
             <div>
-                <input type="text" name="name">
+                <input asp-for="Name" type="text" name="Name">
             </div>
 
 
@@ -102,7 +102,7 @@
             </div>
 
             <div>
-                <input type="text" name="name" required>
+                <input type="text" asp-for="Email" name="Email" required>
             </div>
 
             <div class="form-label">
@@ -111,13 +111,13 @@
             </div>
 
             <div>
-                <input type="text" name="name">
+                <input type="text" asp-for="Phone" name="Phone">
             </div>
 
             <label class="label-text">Company Name </label>
 
             <div>
-                <input type="text" name="name">
+                <input type="text" asp-for="Company" name="Company">
             </div>
 
             <div class="form-label">
@@ -127,7 +127,7 @@
 
             <div>
 
-                <select id="feedback" name="feedback">
+                <select id="feedback" asp-for="Subject" name="Subject" >
                     <option value="General">General</option>
                     <option value="Re-Order">Re-Order</option>
                     <option value="Custom Print">Custom Print</option>
@@ -141,7 +141,7 @@
             <button class="btn-rqd">Required</button>
 
             <div>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:210px"></textarea>
+                <textarea asp-for="Message" id="subject" name="Message" placeholder="Write something.." style="height:210px"></textarea>
 
             </div>
 
